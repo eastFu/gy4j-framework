@@ -19,7 +19,6 @@ public class SpringContextUtil implements ApplicationContextAware {
      * @param applicationContext
      * @throws BeansException
      */
-    @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         SpringContextUtil.applicationContext = applicationContext;
     }
@@ -28,7 +27,6 @@ public class SpringContextUtil implements ApplicationContextAware {
         return applicationContext;
     }
 
-    @SuppressWarnings("unchecked")
     public static <T> T getBean(String name) throws BeansException {
         return (T) applicationContext.getBean(name);
     }
