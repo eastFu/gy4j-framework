@@ -19,8 +19,12 @@ public class WebContextListener extends ContextLoaderListener {
         sb.append("\r\n======================================================================\r\n");
         System.out.println(sb.toString());
 
-        //Log config File
+        //log4j 配置文件目录
         PropertyConfigurator.configure(this.getClass().getClassLoader().getResource("log4j.properties"));
+
+        //cache类型（redis,memcache,mogodb）
+
+        //cache配置文件目录
 
         return super.initWebApplicationContext(servletContext);
     }
