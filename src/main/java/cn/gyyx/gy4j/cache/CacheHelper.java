@@ -11,4 +11,20 @@ import org.apache.log4j.Logger;
 public class CacheHelper {
 
     private static final Logger LOG = Logger.getLogger(CacheHelper.class);
+
+    public Object findByKey(Object key){
+        return  null;
+    }
+
+    public boolean save(Object obj){
+        return true;
+    }
+
+    public boolean remove(Object key){
+        return true;
+    }
+
+    public boolean clear(){
+        return true;
+    }
 }
