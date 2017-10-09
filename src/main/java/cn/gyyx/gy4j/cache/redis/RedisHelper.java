@@ -10,4 +10,8 @@ import org.apache.log4j.Logger;
 public class RedisHelper {
 
     private static final Logger LOG = Logger.getLogger(RedisHelper.class);
+
+	public boolean clear(){
+		return null;
+	}
 }
