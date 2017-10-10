@@ -98,12 +98,16 @@ public class HttpUtil {
             }
             sb.substring(0, sb.length() - 1);
         }
+
+        if(StringUtils.isNotBlank(sb.toString())){
+            url = url + "?" + sb.toString();
+        }
+
         String result = "";
         BufferedReader in = null;
         HttpURLConnection conn=null;
         try {
-            String urlNameString = url + "?" + sb.toString();
-            URL realUrl = new URL(urlNameString);
+            URL realUrl = new URL(url);
             // 打开和URL之间的连接
             conn = (HttpURLConnection)realUrl.openConnection();
             // 设置通用的请求属性
