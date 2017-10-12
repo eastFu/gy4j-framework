@@ -11,4 +11,10 @@ public class MemcacheHelper {
 
     private static final Logger LOG = Logger.getLogger(MemcacheHelper.class);
 
+
+    public boolean save(Object obj){
+
+        return true;
+    }
+
 }

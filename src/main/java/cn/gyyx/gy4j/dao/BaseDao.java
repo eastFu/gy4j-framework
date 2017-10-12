@@ -11,6 +11,7 @@ import java.util.List;
  * @Date : Created in  2017/10/11 15:52
  */
 public interface BaseDao<T,PK extends Serializable> {
+
     /**
      * 保存新增或修改的对象.
      */
