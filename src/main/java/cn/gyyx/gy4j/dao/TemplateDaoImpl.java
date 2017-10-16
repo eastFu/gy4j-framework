@@ -1,6 +1,8 @@
 package cn.gyyx.gy4j.dao;
 
 import cn.gyyx.gy4j.util.ReflectionUtils;
+import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
 
 import java.io.Serializable;
 import java.util.List;
@@ -10,7 +12,7 @@ import java.util.List;
  * @Description :
  * @Date : Created in  2017/10/14 15:02
  */
-public abstract class TemplateDaoImpl<T,PK extends Serializable> implements BaseDao<T,PK>{
+public abstract class TemplateDaoImpl<T,PK extends Serializable> implements BaseDao<T,PK>,BaseMapper<T>{
 
     protected Class<T> entityClass;
 
@@ -19,25 +21,22 @@ public abstract class TemplateDaoImpl<T,PK extends Serializable> implements Base
     }
 
     public void save(final T entity){
-
+        insert(entity);
     }
 
-    public void delete(final T entity){
-
-    }
-
-    public void delete(final PK id){
-
+    public int delete(final PK id){
+        int flag = deleteById(id);
+        return flag;
     }
 
     public T get(final PK id){
-
-        return null;
+        return selectById(id);
     }
 
     public List<T> getAll(){
-
-        return null;
+        EntityWrapper wrapper=new EntityWrapper();
+        wrapper.setEntity(entityClass);
+        return selectList(wrapper);
     }
 
 }
