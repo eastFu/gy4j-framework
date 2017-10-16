@@ -1,10 +1,9 @@
 package cn.gyyx.gy4j.dao;
 
-import org.apache.ibatis.session.SqlSession;
-import org.mybatis.spring.SqlSessionTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
+import cn.gyyx.gy4j.util.ReflectionUtils;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * @Author : east.Fu
@@ -15,34 +14,30 @@ public abstract class TemplateDaoImpl<T,PK extends Serializable> implements Base
 
     protected Class<T> entityClass;
 
-    @Autowired
-    private SqlSessionTemplate sqlSession;
-
-    @SuppressWarnings("unchecked")
     public TemplateDaoImpl(){
-//        this.entityClass = ReflectHelper.getSuperClassGenericType(getClass(), 0);
-        this.entityClass = null;
+        this.entityClass= ReflectionUtils.getSuperClassGenricType(getClass());
     }
 
+    public void save(final T entity){
 
-    public SqlSession getSqlSession(){
-        return sqlSession;
     }
 
-    public void setSqlSession(SqlSessionTemplate sqlSession) {
-        this.sqlSession = sqlSession;
+    public void delete(final T entity){
+
     }
 
+    public void delete(final PK id){
 
-    public T selectSingle(Object param) {
-        if(null == param){
-            throw new IllegalArgumentException("非法参数：param为空！");
-        }
-        T result = null;
-        try{
-            result = getSqlSession().selectOne(entityClass.getName()+SQL_SELECT_SINGLE, param);
-        }catch(Throwable e){
-        }
-        return result;
     }
+
+    public T get(final PK id){
+
+        return null;
+    }
+
+    public List<T> getAll(){
+
+        return null;
+    }
+
 }
