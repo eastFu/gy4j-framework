@@ -1,6 +1,6 @@
 package cn.gyyx.gy4j.dao;
 
-import cn.gyyx.gy4j.model.Page;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
 
 import java.io.Serializable;
 import java.util.List;
@@ -12,63 +12,26 @@ import java.util.List;
  */
 public interface BaseDao<T,PK extends Serializable> {
 
-    /**
-     * 保存新增或修改的对象.
-     */
-    public void save(final T entity);
 
     /**
-     * 删除对象.
-     *
-     * @param entity 对象必须是session中的对象或含id属性的transient对象.
+     * 记录添加（所有字段入库，效率中）
+     * @param po
+     * @return
      */
-    public void delete(final T entity);
+    public int add(T po);
 
     /**
-     * 按id删除对象.
+     * 通过主键获取某个记录
+     * @param id 主键
+     * @return PO
      */
-    public void delete(final PK id);
+    public T get(PK id);
 
     /**
-     * 按id获取对象.
+     * 条件查询列表
+     * @param wrapper 条件表达式
+     * @return PO列表
      */
-    public T get(final PK id);
-
-    /**
-     *	获取全部对象.
-     */
-    public List<T> getAll();
-
-    /**
-     *	获取全部对象,支持排序.
-     */
-    public List<T> getAll(String orderBy, boolean isAsc);
-
-    /**
-     * 按属性查找对象列表,匹配方式为相等.
-     */
-    public List<T> findBy(final String propertyName, final Object value);
-
-    /**
-     * 按属性查找唯一对象,匹配方式为相等.
-     */
-    public T findUniqueBy(final String propertyName, final Object value);
-
-    /**
-     * 按id列表获取对象.
-     */
-    public List<T> findByIds(List<PK> ids);
-
-    /**
-     * 按HQL查询对象列表.
-     *
-     * @param values 数量可变的参数,按顺序绑定.
-     */
-    public <X> List<X> find(final String sql, final Object... values);
-
-    /**
-     * 分页获取全部对象.
-     */
-    public Page<T> getAll(final Page<T> page);
+    public List<T> list(EntityWrapper wrapper);
 
 }
