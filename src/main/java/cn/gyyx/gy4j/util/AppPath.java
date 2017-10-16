@@ -19,6 +19,8 @@ public class AppPath {
 
         return APP_PATH;
     }
+
+
     public String setRootPath(String rootPath)
     {
         return APP_ROOT_PATH = rootPath;

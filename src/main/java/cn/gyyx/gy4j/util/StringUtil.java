@@ -1382,8 +1382,9 @@ public class StringUtil {
                 String img = content.substring(startIndex, (endIndex+2));
                 String srcurl = img.substring(img.indexOf("src=\"")+5);
                 srcurl = srcurl.substring(0, srcurl.indexOf("\""));
-                String url = AppPath.getInstance().getHttpUrl()
-                        +srcurl;
+//                String url = AppPath.getInstance().getHttpUrl()
+//                        +srcurl;
+                String url ="" +srcurl;
 
                 if(mode.equals("10.2"))
                 {
