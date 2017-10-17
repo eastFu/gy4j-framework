@@ -12,6 +12,6 @@ public class RedisHelper {
     private static final Logger LOG = Logger.getLogger(RedisHelper.class);
 
 	public boolean clear(){
-		return null;
+		return true;
 	}
 }

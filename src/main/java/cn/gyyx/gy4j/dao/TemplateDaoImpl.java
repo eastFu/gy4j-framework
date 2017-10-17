@@ -1,6 +1,7 @@
 package cn.gyyx.gy4j.dao;
 
 import cn.gyyx.gy4j.util.ReflectionUtils;
+import com.baomidou.mybatisplus.annotations.TableName;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 
@@ -12,6 +13,7 @@ import java.util.List;
  * @Description :
  * @Date : Created in  2017/10/14 15:02
  */
+@TableName
 public abstract class TemplateDaoImpl<T,PK extends Serializable> implements BaseDao<T,PK>,BaseMapper<T>{
 
     protected Class<T> entityClass;
