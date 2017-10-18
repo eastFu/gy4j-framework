@@ -6,7 +6,7 @@
  *
  * 注意：本内容仅限于公司内部使用，禁止转发。
  * ------------------------------------------------*/
-package cn.gyyx.gy4j.util;
+package com.gyyx.core.util;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

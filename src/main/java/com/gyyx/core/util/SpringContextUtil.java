@@ -1,4 +1,4 @@
-package cn.gyyx.gy4j.util;
+package com.gyyx.core.util;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
