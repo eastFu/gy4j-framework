@@ -1,5 +1,5 @@
 
-package cn.gyyx.gy4j.util;
+package com.gyyx.core.util;
 
 import java.io.IOException;
 import java.io.InputStream;
