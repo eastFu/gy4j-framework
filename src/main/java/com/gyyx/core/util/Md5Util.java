@@ -1,4 +1,4 @@
-package cn.gyyx.gy4j.util;
+package com.gyyx.core.util;
 
 import org.apache.commons.lang3.StringUtils;
 
