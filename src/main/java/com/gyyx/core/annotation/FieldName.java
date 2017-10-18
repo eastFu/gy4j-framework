@@ -1,4 +1,4 @@
-package cn.gyyx.gy4j.annotation;
+package com.gyyx.core.annotation;
 
 import java.lang.annotation.*;
 

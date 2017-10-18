@@ -1,4 +1,4 @@
-package cn.gyyx.gy4j.cache.redis;
+package com.gyyx.core.cache.redis;
 
 import org.apache.log4j.Logger;
 

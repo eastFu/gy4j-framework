@@ -1,4 +1,4 @@
-package cn.gyyx.gy4j.model;
+package com.gyyx.core.model;
 
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableName;

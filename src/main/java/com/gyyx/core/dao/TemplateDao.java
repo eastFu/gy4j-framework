@@ -1,4 +1,4 @@
-package cn.gyyx.gy4j.dao;
+package com.gyyx.core.dao;
 
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 

@@ -1,4 +1,4 @@
-package cn.gyyx.gy4j.model;
+package com.gyyx.core.model;
 
 import java.sql.ResultSet;
 import java.util.List;

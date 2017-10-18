@@ -1,4 +1,4 @@
-package cn.gyyx.gy4j.exception;
+package com.gyyx.core.exception;
 
 /**
  * Created by Administrator on 2017/9/27 0027.

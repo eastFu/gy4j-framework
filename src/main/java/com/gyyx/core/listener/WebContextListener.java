@@ -1,4 +1,4 @@
-package cn.gyyx.gy4j.listener;
+package com.gyyx.core.listener;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.springframework.web.context.ContextLoaderListener;
