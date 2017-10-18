@@ -1,4 +1,4 @@
-package cn.gyyx.gy4j.util;
+package com.gyyx.core.util;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
