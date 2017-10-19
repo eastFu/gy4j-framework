@@ -1,12 +1,12 @@
-package com.gyyx.core.mybatis.generator.config.builder;
+package cn.gyyx.frame.mybatis.generator.config.builder;
 
-import com.gyyx.core.mybatis.generator.config.*;
-import com.gyyx.core.mybatis.generator.config.po.TableField;
-import com.gyyx.core.mybatis.generator.config.po.TableInfo;
-import com.gyyx.core.mybatis.generator.config.rules.DbType;
-import com.gyyx.core.mybatis.generator.config.rules.NamingStrategy;
-import com.gyyx.core.mybatis.generator.config.rules.QuerySQL;
-import com.gyyx.core.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.generator.config.*;
+import cn.gyyx.frame.mybatis.generator.config.rules.NamingStrategy;
+import cn.gyyx.frame.mybatis.generator.config.rules.QuerySQL;
+import cn.gyyx.frame.mybatis.generator.config.po.TableField;
+import cn.gyyx.frame.mybatis.generator.config.po.TableInfo;
+import cn.gyyx.frame.mybatis.generator.config.rules.DbType;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
 
 import java.io.File;
 import java.sql.Connection;

@@ -1,7 +1,7 @@
-package com.gyyx.core.mybatis.generator;
+package cn.gyyx.frame.mybatis.generator;
 
-import com.gyyx.core.mybatis.generator.config.FileOutConfig;
-import com.gyyx.core.mybatis.generator.config.builder.ConfigBuilder;
+import cn.gyyx.frame.mybatis.generator.config.FileOutConfig;
+import cn.gyyx.frame.mybatis.generator.config.builder.ConfigBuilder;
 
 import java.util.List;
 import java.util.Map;

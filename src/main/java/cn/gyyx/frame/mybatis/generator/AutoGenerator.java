@@ -1,12 +1,12 @@
-package com.gyyx.core.mybatis.generator;
+package cn.gyyx.frame.mybatis.generator;
 
-import com.gyyx.core.mybatis.generator.config.ConstVal;
-import com.gyyx.core.mybatis.generator.config.FileOutConfig;
-import com.gyyx.core.mybatis.generator.config.TemplateConfig;
-import com.gyyx.core.mybatis.generator.config.builder.ConfigBuilder;
-import com.gyyx.core.mybatis.generator.config.po.TableInfo;
-import com.gyyx.core.mybatis.toolkit.CollectionUtils;
-import com.gyyx.core.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.toolkit.CollectionUtils;
+import cn.gyyx.frame.mybatis.generator.config.ConstVal;
+import cn.gyyx.frame.mybatis.generator.config.FileOutConfig;
+import cn.gyyx.frame.mybatis.generator.config.TemplateConfig;
+import cn.gyyx.frame.mybatis.generator.config.builder.ConfigBuilder;
+import cn.gyyx.frame.mybatis.generator.config.po.TableInfo;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
 import org.apache.velocity.Template;

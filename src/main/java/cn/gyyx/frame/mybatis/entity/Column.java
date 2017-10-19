@@ -1,7 +1,7 @@
-package com.gyyx.core.mybatis.entity;
+package cn.gyyx.frame.mybatis.entity;
 
-import com.gyyx.core.mybatis.mapper.SqlRunner;
-import com.gyyx.core.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.mapper.SqlRunner;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
 
 import java.io.Serializable;
 

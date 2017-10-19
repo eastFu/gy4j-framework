@@ -1,6 +1,6 @@
-package com.gyyx.core.mybatis.generator.config;
+package cn.gyyx.frame.mybatis.generator.config;
 
-import com.gyyx.core.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
 
 public class PackageConfig {
 

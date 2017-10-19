@@ -1,4 +1,4 @@
-package com.gyyx.core.mybatis.generator.config;
+package cn.gyyx.frame.mybatis.generator.config;
 
 public class TemplateConfig {
 
