@@ -1,4 +1,4 @@
-package com.gyyx.core.model;
+package cn.gyyx.frame.model;
 
 import java.sql.ResultSet;
 import java.util.List;

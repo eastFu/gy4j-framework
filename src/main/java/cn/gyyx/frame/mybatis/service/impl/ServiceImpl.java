@@ -1,15 +1,15 @@
-package com.gyyx.core.mybatis.service.impl;
+package cn.gyyx.frame.mybatis.service.impl;
 
-import com.gyyx.core.mybatis.entity.TableInfo;
-import com.gyyx.core.mybatis.enums.SqlMethod;
-import com.gyyx.core.mybatis.exceptions.MybatisPlusException;
-import com.gyyx.core.mybatis.mapper.BaseMapper;
-import com.gyyx.core.mybatis.mapper.Condition;
-import com.gyyx.core.mybatis.mapper.SqlHelper;
-import com.gyyx.core.mybatis.mapper.Wrapper;
-import com.gyyx.core.mybatis.plugins.Page;
-import com.gyyx.core.mybatis.service.IService;
-import com.gyyx.core.mybatis.toolkit.*;
+import cn.gyyx.frame.mybatis.enums.SqlMethod;
+import cn.gyyx.frame.mybatis.mapper.BaseMapper;
+import cn.gyyx.frame.mybatis.mapper.Condition;
+import cn.gyyx.frame.mybatis.mapper.SqlHelper;
+import cn.gyyx.frame.mybatis.mapper.Wrapper;
+import cn.gyyx.frame.mybatis.plugins.Page;
+import cn.gyyx.frame.mybatis.service.IService;
+import cn.gyyx.frame.mybatis.toolkit.*;
+import cn.gyyx.frame.mybatis.entity.TableInfo;
+import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
 import org.apache.ibatis.session.SqlSession;

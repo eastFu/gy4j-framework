@@ -1,4 +1,4 @@
-package com.gyyx.core.mybatis;
+package cn.gyyx.frame.mybatis;
 
 import org.apache.ibatis.builder.BaseBuilder;
 import org.apache.ibatis.builder.BuilderException;

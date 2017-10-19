@@ -1,6 +1,6 @@
-package com.gyyx.core.mybatis.toolkit;
+package cn.gyyx.frame.mybatis.toolkit;
 
-import com.gyyx.core.mybatis.exceptions.MybatisPlusException;
+import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
 
 public class VersionUtils {
 

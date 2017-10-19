@@ -1,7 +1,7 @@
-package com.gyyx.core.mybatis;
+package cn.gyyx.frame.mybatis;
 
-import com.gyyx.core.mybatis.entity.GlobalConfiguration;
-import com.gyyx.core.mybatis.mapper.BaseMapper;
+import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.frame.mybatis.mapper.BaseMapper;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.annotations.Options.FlushCachePolicy;
 import org.apache.ibatis.annotations.ResultMap;

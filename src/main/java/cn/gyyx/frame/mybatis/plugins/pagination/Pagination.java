@@ -1,8 +1,8 @@
-package com.gyyx.core.mybatis.plugins.pagination;
+package cn.gyyx.frame.mybatis.plugins.pagination;
 
-import com.gyyx.core.mybatis.enums.Optimize;
-import com.gyyx.core.mybatis.mapper.SqlHelper;
-import com.gyyx.core.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.enums.Optimize;
+import cn.gyyx.frame.mybatis.mapper.SqlHelper;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
 import org.apache.ibatis.session.RowBounds;
 
 import java.io.Serializable;

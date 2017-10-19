@@ -1,6 +1,6 @@
-package com.gyyx.core.mybatis.toolkit;
+package cn.gyyx.frame.mybatis.toolkit;
 
-import com.gyyx.core.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
 
 import java.util.Collections;
 import java.util.HashSet;

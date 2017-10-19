@@ -1,7 +1,7 @@
-package com.gyyx.core.mybatis.toolkit;
+package cn.gyyx.frame.mybatis.toolkit;
 
-import com.gyyx.core.mybatis.exceptions.MybatisPlusException;
-import com.gyyx.core.mybatis.plugins.SqlExplainInterceptor;
+import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
+import cn.gyyx.frame.mybatis.plugins.SqlExplainInterceptor;
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
 

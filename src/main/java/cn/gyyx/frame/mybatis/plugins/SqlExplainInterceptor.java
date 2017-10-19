@@ -1,10 +1,10 @@
-package com.gyyx.core.mybatis.plugins;
+package cn.gyyx.frame.mybatis.plugins;
 
-import com.gyyx.core.mybatis.entity.GlobalConfiguration;
-import com.gyyx.core.mybatis.enums.DBType;
-import com.gyyx.core.mybatis.exceptions.MybatisPlusException;
-import com.gyyx.core.mybatis.toolkit.StringUtils;
-import com.gyyx.core.mybatis.toolkit.VersionUtils;
+import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.frame.mybatis.enums.DBType;
+import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.toolkit.VersionUtils;
 import org.apache.ibatis.builder.StaticSqlSource;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.logging.Log;

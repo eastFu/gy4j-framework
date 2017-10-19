@@ -1,4 +1,4 @@
-package com.gyyx.core.mybatis.toolkit;
+package cn.gyyx.frame.mybatis.toolkit;
 
 public class ArrayUtils {
 

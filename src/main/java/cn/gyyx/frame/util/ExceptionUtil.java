@@ -1,4 +1,4 @@
-package com.gyyx.core.util;
+package cn.gyyx.frame.util;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.PrintWriter;

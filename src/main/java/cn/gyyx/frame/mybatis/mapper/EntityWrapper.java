@@ -1,7 +1,7 @@
-package com.gyyx.core.mybatis.mapper;
+package cn.gyyx.frame.mybatis.mapper;
 
-import com.gyyx.core.mybatis.toolkit.ReflectionKit;
-import com.gyyx.core.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.toolkit.ReflectionKit;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
 
 @SuppressWarnings("serial")
 public class EntityWrapper<T> extends Wrapper<T> {

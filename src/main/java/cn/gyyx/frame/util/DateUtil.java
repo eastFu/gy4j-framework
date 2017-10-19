@@ -1,4 +1,4 @@
-package com.gyyx.core.util;
+package cn.gyyx.frame.util;
 
 import org.apache.commons.lang3.StringUtils;
 

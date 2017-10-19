@@ -1,10 +1,10 @@
-package com.gyyx.core.mybatis.entity;
+package cn.gyyx.frame.mybatis.entity;
 
-import com.gyyx.core.mybatis.annotations.TableField;
-import com.gyyx.core.mybatis.annotations.TableLogic;
-import com.gyyx.core.mybatis.enums.FieldStrategy;
-import com.gyyx.core.mybatis.toolkit.SqlReservedWords;
-import com.gyyx.core.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.annotations.TableLogic;
+import cn.gyyx.frame.mybatis.enums.FieldStrategy;
+import cn.gyyx.frame.mybatis.annotations.TableField;
+import cn.gyyx.frame.mybatis.toolkit.SqlReservedWords;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
 
 import java.lang.reflect.Field;
 

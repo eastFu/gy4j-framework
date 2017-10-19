@@ -1,10 +1,10 @@
-package com.gyyx.core.mybatis.plugins;
+package cn.gyyx.frame.mybatis.plugins;
 
-import com.gyyx.core.mybatis.annotations.TableField;
-import com.gyyx.core.mybatis.annotations.Version;
-import com.gyyx.core.mybatis.mapper.EntityWrapper;
-import com.gyyx.core.mybatis.toolkit.PluginUtils;
-import com.gyyx.core.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.mapper.EntityWrapper;
+import cn.gyyx.frame.mybatis.toolkit.PluginUtils;
+import cn.gyyx.frame.mybatis.annotations.TableField;
+import cn.gyyx.frame.mybatis.annotations.Version;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
 import net.sf.jsqlparser.expression.BinaryExpression;
 import net.sf.jsqlparser.expression.Expression;
 import net.sf.jsqlparser.expression.operators.conditional.AndExpression;

@@ -1,7 +1,7 @@
-package com.gyyx.core.mybatis.spring;
+package cn.gyyx.frame.mybatis.spring;
 
-import com.gyyx.core.mybatis.entity.GlobalConfiguration;
-import com.gyyx.core.mybatis.toolkit.SystemClock;
+import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.frame.mybatis.toolkit.SystemClock;
 import org.apache.ibatis.binding.MapperRegistry;
 import org.apache.ibatis.builder.xml.XMLMapperBuilder;
 import org.apache.ibatis.builder.xml.XMLMapperEntityResolver;

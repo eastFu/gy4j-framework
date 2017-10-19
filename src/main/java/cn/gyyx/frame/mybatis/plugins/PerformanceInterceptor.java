@@ -1,10 +1,10 @@
-package com.gyyx.core.mybatis.plugins;
+package cn.gyyx.frame.mybatis.plugins;
 
-import com.gyyx.core.mybatis.exceptions.MybatisPlusException;
-import com.gyyx.core.mybatis.toolkit.PluginUtils;
-import com.gyyx.core.mybatis.toolkit.SqlUtils;
-import com.gyyx.core.mybatis.toolkit.StringUtils;
-import com.gyyx.core.mybatis.toolkit.SystemClock;
+import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
+import cn.gyyx.frame.mybatis.toolkit.PluginUtils;
+import cn.gyyx.frame.mybatis.toolkit.SqlUtils;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.toolkit.SystemClock;
 import org.apache.ibatis.executor.statement.StatementHandler;
 import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.plugin.*;

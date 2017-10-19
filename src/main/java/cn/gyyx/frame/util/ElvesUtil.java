@@ -1,4 +1,4 @@
-package com.gyyx.core.util;
+package cn.gyyx.frame.util;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;

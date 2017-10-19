@@ -1,7 +1,7 @@
-package com.gyyx.core.mybatis.service;
+package cn.gyyx.frame.mybatis.service;
 
-import com.gyyx.core.mybatis.mapper.Wrapper;
-import com.gyyx.core.mybatis.plugins.Page;
+import cn.gyyx.frame.mybatis.mapper.Wrapper;
+import cn.gyyx.frame.mybatis.plugins.Page;
 
 import java.io.Serializable;
 import java.util.List;

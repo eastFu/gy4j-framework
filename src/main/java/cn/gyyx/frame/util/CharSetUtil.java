@@ -1,4 +1,4 @@
-package com.gyyx.core.util;
+package cn.gyyx.frame.util;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;

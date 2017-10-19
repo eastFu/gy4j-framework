@@ -1,7 +1,7 @@
-package com.gyyx.core.mybatis.plugins.pagination.dialects;
+package cn.gyyx.frame.mybatis.plugins.pagination.dialects;
 
-import com.gyyx.core.mybatis.toolkit.StringUtils;
-import com.gyyx.core.mybatis.plugins.pagination.IDialect;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.plugins.pagination.IDialect;
 
 public class SQLServer2005Dialect implements IDialect {
 

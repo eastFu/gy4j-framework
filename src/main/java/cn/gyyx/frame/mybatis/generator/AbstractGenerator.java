@@ -1,11 +1,11 @@
-package com.gyyx.core.mybatis.generator;
+package cn.gyyx.frame.mybatis.generator;
 
-import com.gyyx.core.mybatis.generator.config.DataSourceConfig;
-import com.gyyx.core.mybatis.generator.config.GlobalConfig;
-import com.gyyx.core.mybatis.generator.config.PackageConfig;
-import com.gyyx.core.mybatis.generator.config.StrategyConfig;
-import com.gyyx.core.mybatis.generator.config.TemplateConfig;
-import com.gyyx.core.mybatis.generator.config.builder.ConfigBuilder;
+import cn.gyyx.frame.mybatis.generator.config.builder.ConfigBuilder;
+import cn.gyyx.frame.mybatis.generator.config.DataSourceConfig;
+import cn.gyyx.frame.mybatis.generator.config.GlobalConfig;
+import cn.gyyx.frame.mybatis.generator.config.PackageConfig;
+import cn.gyyx.frame.mybatis.generator.config.StrategyConfig;
+import cn.gyyx.frame.mybatis.generator.config.TemplateConfig;
 
 public abstract class AbstractGenerator {
 

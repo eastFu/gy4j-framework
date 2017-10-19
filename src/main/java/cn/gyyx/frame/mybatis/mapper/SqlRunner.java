@@ -1,8 +1,8 @@
-package com.gyyx.core.mybatis.mapper;
+package cn.gyyx.frame.mybatis.mapper;
 
-import com.gyyx.core.mybatis.entity.GlobalConfiguration;
-import com.gyyx.core.mybatis.plugins.Page;
-import com.gyyx.core.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.frame.mybatis.plugins.Page;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.transaction.annotation.Transactional;
