@@ -1,4 +1,4 @@
-package com.gyyx.core.interceper;
+package cn.gyyx.frame.interceper;
 
 /**
  * @Author : east.Fu

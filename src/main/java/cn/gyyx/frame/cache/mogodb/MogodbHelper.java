@@ -1,4 +1,4 @@
-package com.gyyx.core.cache.mogodb;
+package cn.gyyx.frame.cache.mogodb;
 
 import org.apache.log4j.Logger;
 
