@@ -1,13 +1,13 @@
-package com.gyyx.core.mybatis.plugins;
+package cn.gyyx.frame.mybatis.plugins;
 
-import com.gyyx.core.mybatis.MybatisDefaultParameterHandler;
-import com.gyyx.core.mybatis.entity.CountOptimize;
-import com.gyyx.core.mybatis.plugins.pagination.DialectFactory;
-import com.gyyx.core.mybatis.plugins.pagination.Pagination;
-import com.gyyx.core.mybatis.toolkit.JdbcUtils;
-import com.gyyx.core.mybatis.toolkit.PluginUtils;
-import com.gyyx.core.mybatis.toolkit.SqlUtils;
-import com.gyyx.core.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.entity.CountOptimize;
+import cn.gyyx.frame.mybatis.MybatisDefaultParameterHandler;
+import cn.gyyx.frame.mybatis.plugins.pagination.DialectFactory;
+import cn.gyyx.frame.mybatis.plugins.pagination.Pagination;
+import cn.gyyx.frame.mybatis.toolkit.JdbcUtils;
+import cn.gyyx.frame.mybatis.toolkit.PluginUtils;
+import cn.gyyx.frame.mybatis.toolkit.SqlUtils;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
 import org.apache.ibatis.executor.statement.StatementHandler;
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
