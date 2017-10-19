@@ -1,6 +1,6 @@
-package com.gyyx.core.mybatis;
+package cn.gyyx.frame.mybatis;
 
-import com.gyyx.core.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
 import org.apache.ibatis.binding.BindingException;
 import org.apache.ibatis.binding.MapperProxyFactory;
 import org.apache.ibatis.binding.MapperRegistry;
