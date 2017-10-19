@@ -1,9 +1,9 @@
-package com.gyyx.core.mybatis.mapper;
+package cn.gyyx.frame.mybatis.mapper;
 
-import com.gyyx.core.mybatis.entity.Column;
-import com.gyyx.core.mybatis.enums.SqlLike;
-import com.gyyx.core.mybatis.exceptions.MybatisPlusException;
-import com.gyyx.core.mybatis.toolkit.*;
+import cn.gyyx.frame.mybatis.entity.Column;
+import cn.gyyx.frame.mybatis.enums.SqlLike;
+import cn.gyyx.frame.mybatis.toolkit.*;
+import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
 
 import java.io.Serializable;
 import java.util.*;
