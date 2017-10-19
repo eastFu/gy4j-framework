@@ -1,15 +1,15 @@
-package com.gyyx.core.mybatis.mapper;
+package cn.gyyx.frame.mybatis.mapper;
 
-import com.gyyx.core.mybatis.entity.GlobalConfiguration;
-import com.gyyx.core.mybatis.entity.TableFieldInfo;
-import com.gyyx.core.mybatis.entity.TableInfo;
-import com.gyyx.core.mybatis.enums.FieldStrategy;
-import com.gyyx.core.mybatis.enums.IdType;
-import com.gyyx.core.mybatis.enums.SqlMethod;
-import com.gyyx.core.mybatis.toolkit.CollectionUtils;
-import com.gyyx.core.mybatis.toolkit.SqlReservedWords;
-import com.gyyx.core.mybatis.toolkit.StringUtils;
-import com.gyyx.core.mybatis.toolkit.TableInfoHelper;
+import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.frame.mybatis.enums.FieldStrategy;
+import cn.gyyx.frame.mybatis.enums.SqlMethod;
+import cn.gyyx.frame.mybatis.toolkit.CollectionUtils;
+import cn.gyyx.frame.mybatis.entity.TableFieldInfo;
+import cn.gyyx.frame.mybatis.entity.TableInfo;
+import cn.gyyx.frame.mybatis.enums.IdType;
+import cn.gyyx.frame.mybatis.toolkit.SqlReservedWords;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.toolkit.TableInfoHelper;
 import org.apache.ibatis.builder.MapperBuilderAssistant;
 import org.apache.ibatis.executor.keygen.Jdbc3KeyGenerator;
 import org.apache.ibatis.executor.keygen.KeyGenerator;
