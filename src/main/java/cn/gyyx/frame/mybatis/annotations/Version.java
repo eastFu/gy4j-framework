@@ -1,4 +1,4 @@
-package com.gyyx.core.mybatis.annotations;
+package cn.gyyx.frame.mybatis.annotations;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

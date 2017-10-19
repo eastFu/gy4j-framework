@@ -1,4 +1,4 @@
-package com.gyyx.core.mybatis.entity;
+package cn.gyyx.frame.mybatis.entity;
 
 public class CountOptimize {
 
