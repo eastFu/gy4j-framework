@@ -1,4 +1,4 @@
-package com.gyyx.core.mybatis.enums;
+package cn.gyyx.frame.mybatis.enums;
 
 public enum SqlLike {
     /**

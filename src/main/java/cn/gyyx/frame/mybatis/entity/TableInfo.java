@@ -1,8 +1,8 @@
-package com.gyyx.core.mybatis.entity;
+package cn.gyyx.frame.mybatis.entity;
 
-import com.gyyx.core.mybatis.annotations.KeySequence;
-import com.gyyx.core.mybatis.enums.IdType;
-import com.gyyx.core.mybatis.exceptions.MybatisPlusException;
+import cn.gyyx.frame.mybatis.annotations.KeySequence;
+import cn.gyyx.frame.mybatis.enums.IdType;
+import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
 import org.apache.ibatis.session.Configuration;
 
 import java.util.List;

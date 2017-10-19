@@ -1,6 +1,6 @@
-package com.gyyx.core.mybatis;
+package cn.gyyx.frame.mybatis;
 
-import com.gyyx.core.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
 
 import java.io.IOException;
 import java.io.Serializable;
