@@ -1,7 +1,7 @@
-package com.gyyx.core.mybatis.generator.config.converts;
+package cn.gyyx.frame.mybatis.generator.config.converts;
 
-import com.gyyx.core.mybatis.generator.config.ITypeConvert;
-import com.gyyx.core.mybatis.generator.config.rules.DbColumnType;
+import cn.gyyx.frame.mybatis.generator.config.ITypeConvert;
+import cn.gyyx.frame.mybatis.generator.config.rules.DbColumnType;
 
 public class OracleTypeConvert implements ITypeConvert {
 
