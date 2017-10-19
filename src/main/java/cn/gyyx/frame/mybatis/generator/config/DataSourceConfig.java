@@ -1,11 +1,11 @@
-package com.gyyx.core.mybatis.generator.config;
+package cn.gyyx.frame.mybatis.generator.config;
 
-import com.gyyx.core.mybatis.exceptions.MybatisPlusException;
-import com.gyyx.core.mybatis.generator.config.converts.MySqlTypeConvert;
-import com.gyyx.core.mybatis.generator.config.converts.OracleTypeConvert;
-import com.gyyx.core.mybatis.generator.config.converts.PostgreSqlTypeConvert;
-import com.gyyx.core.mybatis.generator.config.converts.SqlServerTypeConvert;
-import com.gyyx.core.mybatis.generator.config.rules.DbType;
+import cn.gyyx.frame.mybatis.generator.config.converts.PostgreSqlTypeConvert;
+import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
+import cn.gyyx.frame.mybatis.generator.config.converts.MySqlTypeConvert;
+import cn.gyyx.frame.mybatis.generator.config.converts.OracleTypeConvert;
+import cn.gyyx.frame.mybatis.generator.config.converts.SqlServerTypeConvert;
+import cn.gyyx.frame.mybatis.generator.config.rules.DbType;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
