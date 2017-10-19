@@ -1,6 +1,6 @@
-package com.gyyx.core.mybatis;
+package cn.gyyx.frame.mybatis;
 
-import com.gyyx.core.mybatis.exceptions.MybatisPlusException;
+import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
 import org.apache.ibatis.cursor.Cursor;
 import org.apache.ibatis.executor.BatchResult;
 import org.apache.ibatis.session.*;

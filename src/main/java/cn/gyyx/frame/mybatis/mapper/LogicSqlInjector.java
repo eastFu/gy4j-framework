@@ -1,10 +1,10 @@
-package com.gyyx.core.mybatis.mapper;
+package cn.gyyx.frame.mybatis.mapper;
 
-import com.gyyx.core.mybatis.entity.TableFieldInfo;
-import com.gyyx.core.mybatis.entity.TableInfo;
-import com.gyyx.core.mybatis.enums.SqlMethod;
-import com.gyyx.core.mybatis.toolkit.SqlReservedWords;
-import com.gyyx.core.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.entity.TableFieldInfo;
+import cn.gyyx.frame.mybatis.enums.SqlMethod;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.entity.TableInfo;
+import cn.gyyx.frame.mybatis.toolkit.SqlReservedWords;
 import org.apache.ibatis.mapping.SqlSource;
 import org.apache.ibatis.scripting.defaults.RawSqlSource;
 
