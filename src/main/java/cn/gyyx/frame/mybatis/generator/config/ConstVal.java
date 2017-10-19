@@ -1,4 +1,4 @@
-package com.gyyx.core.mybatis.generator.config;
+package cn.gyyx.frame.mybatis.generator.config;
 
 import java.io.File;
 import java.nio.charset.Charset;

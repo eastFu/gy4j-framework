@@ -1,7 +1,7 @@
-package com.gyyx.core.mybatis.generator.config.rules;
+package cn.gyyx.frame.mybatis.generator.config.rules;
 
-import com.gyyx.core.mybatis.generator.config.ConstVal;
-import com.gyyx.core.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.generator.config.ConstVal;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
 
 public enum NamingStrategy {
     /**

@@ -1,6 +1,6 @@
-package com.gyyx.core.mybatis.mapper;
+package cn.gyyx.frame.mybatis.mapper;
 
-import com.gyyx.core.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
 
 @SuppressWarnings({"rawtypes", "serial"})
 public class Condition extends Wrapper {
