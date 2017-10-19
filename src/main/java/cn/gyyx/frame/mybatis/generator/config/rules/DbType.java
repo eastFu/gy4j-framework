@@ -1,4 +1,4 @@
-package com.gyyx.core.mybatis.generator.config.rules;
+package cn.gyyx.frame.mybatis.generator.config.rules;
 
 public enum DbType {
 

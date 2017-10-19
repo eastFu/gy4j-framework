@@ -1,8 +1,8 @@
-package com.gyyx.core.mybatis.generator.config.po;
+package cn.gyyx.frame.mybatis.generator.config.po;
 
-import com.gyyx.core.mybatis.generator.config.StrategyConfig;
-import com.gyyx.core.mybatis.toolkit.CollectionUtils;
-import com.gyyx.core.mybatis.toolkit.StringUtils;
+import cn.gyyx.frame.mybatis.generator.config.StrategyConfig;
+import cn.gyyx.frame.mybatis.toolkit.CollectionUtils;
+import cn.gyyx.frame.mybatis.toolkit.StringUtils;
 
 import java.util.*;
 
