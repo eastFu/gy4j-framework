@@ -1,15 +1,15 @@
-package cn.gyyx.frame.mybatis.entity;
+package cn.gyyx.framework.mybatis.entity;
 
-import cn.gyyx.frame.mybatis.enums.FieldStrategy;
-import cn.gyyx.frame.mybatis.mapper.ISqlInjector;
-import cn.gyyx.frame.mybatis.mapper.MetaObjectHandler;
-import cn.gyyx.frame.mybatis.toolkit.*;
-import cn.gyyx.frame.mybatis.MybatisSqlSessionTemplate;
-import cn.gyyx.frame.mybatis.enums.DBType;
-import cn.gyyx.frame.mybatis.enums.IdType;
-import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
-import cn.gyyx.frame.mybatis.mapper.AutoSqlInjector;
-import cn.gyyx.frame.mybatis.mapper.IKeyGenerator;
+import cn.gyyx.framework.mybatis.enums.FieldStrategy;
+import cn.gyyx.framework.mybatis.mapper.ISqlInjector;
+import cn.gyyx.framework.mybatis.mapper.MetaObjectHandler;
+import cn.gyyx.framework.mybatis.toolkit.*;
+import cn.gyyx.framework.mybatis.MybatisSqlSessionTemplate;
+import cn.gyyx.framework.mybatis.enums.DBType;
+import cn.gyyx.framework.mybatis.enums.IdType;
+import cn.gyyx.framework.mybatis.exceptions.MybatisPlusException;
+import cn.gyyx.framework.mybatis.mapper.AutoSqlInjector;
+import cn.gyyx.framework.mybatis.mapper.IKeyGenerator;
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
 import org.apache.ibatis.session.Configuration;

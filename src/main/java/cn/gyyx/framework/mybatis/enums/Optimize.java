@@ -1,4 +1,4 @@
-package cn.gyyx.frame.mybatis.enums;
+package cn.gyyx.framework.mybatis.enums;
 
 public enum Optimize {
     /**
