@@ -1,4 +1,4 @@
-package cn.gyyx.frame.mybatis;
+package cn.gyyx.framework.mybatis;
 
 import org.apache.ibatis.executor.parameter.ParameterHandler;
 import org.apache.ibatis.mapping.BoundSql;

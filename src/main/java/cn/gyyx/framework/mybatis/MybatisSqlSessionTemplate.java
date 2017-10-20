@@ -1,6 +1,6 @@
-package cn.gyyx.frame.mybatis;
+package cn.gyyx.framework.mybatis;
 
-import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
+import cn.gyyx.framework.mybatis.exceptions.MybatisPlusException;
 import org.apache.ibatis.cursor.Cursor;
 import org.apache.ibatis.executor.BatchResult;
 import org.apache.ibatis.session.*;
@@ -93,6 +93,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public <T> T selectOne(String statement) {
         return this.sqlSessionProxy.<T>selectOne(statement);
     }
@@ -101,6 +102,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public <T> T selectOne(String statement, Object parameter) {
         return this.sqlSessionProxy.<T>selectOne(statement, parameter);
     }
@@ -109,6 +111,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public <K, V> Map<K, V> selectMap(String statement, String mapKey) {
         return this.sqlSessionProxy.<K, V>selectMap(statement, mapKey);
     }
@@ -117,6 +120,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public <K, V> Map<K, V> selectMap(String statement, Object parameter, String mapKey) {
         return this.sqlSessionProxy.<K, V>selectMap(statement, parameter, mapKey);
     }
@@ -125,6 +129,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public <K, V> Map<K, V> selectMap(String statement, Object parameter, String mapKey, RowBounds rowBounds) {
         return this.sqlSessionProxy.<K, V>selectMap(statement, parameter, mapKey, rowBounds);
     }
@@ -133,6 +138,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public <T> Cursor<T> selectCursor(String statement) {
         return this.sqlSessionProxy.selectCursor(statement);
     }
@@ -141,6 +147,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public <T> Cursor<T> selectCursor(String statement, Object parameter) {
         return this.sqlSessionProxy.selectCursor(statement, parameter);
     }
@@ -149,6 +156,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public <T> Cursor<T> selectCursor(String statement, Object parameter, RowBounds rowBounds) {
         return this.sqlSessionProxy.selectCursor(statement, parameter, rowBounds);
     }
@@ -157,6 +165,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public <E> List<E> selectList(String statement) {
         return this.sqlSessionProxy.<E>selectList(statement);
     }
@@ -165,6 +174,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public <E> List<E> selectList(String statement, Object parameter) {
         return this.sqlSessionProxy.<E>selectList(statement, parameter);
     }
@@ -173,6 +183,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public <E> List<E> selectList(String statement, Object parameter, RowBounds rowBounds) {
         return this.sqlSessionProxy.<E>selectList(statement, parameter, rowBounds);
     }
@@ -181,6 +192,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     @SuppressWarnings("rawtypes")
     public void select(String statement, ResultHandler handler) {
         this.sqlSessionProxy.select(statement, handler);
@@ -190,6 +202,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     @SuppressWarnings("rawtypes")
     public void select(String statement, Object parameter, ResultHandler handler) {
         this.sqlSessionProxy.select(statement, parameter, handler);
@@ -199,6 +212,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     @SuppressWarnings("rawtypes")
     public void select(String statement, Object parameter, RowBounds rowBounds, ResultHandler handler) {
         this.sqlSessionProxy.select(statement, parameter, rowBounds, handler);
@@ -208,6 +222,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public int insert(String statement) {
         return this.sqlSessionProxy.insert(statement);
     }
@@ -216,6 +231,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public int insert(String statement, Object parameter) {
         return this.sqlSessionProxy.insert(statement, parameter);
     }
@@ -224,6 +240,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public int update(String statement) {
         return this.sqlSessionProxy.update(statement);
     }
@@ -232,6 +249,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public int update(String statement, Object parameter) {
         return this.sqlSessionProxy.update(statement, parameter);
     }
@@ -240,6 +258,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public int delete(String statement) {
         return this.sqlSessionProxy.delete(statement);
     }
@@ -248,6 +267,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public int delete(String statement, Object parameter) {
         return this.sqlSessionProxy.delete(statement, parameter);
     }
@@ -256,6 +276,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public <T> T getMapper(Class<T> type) {
         return getConfiguration().getMapper(type, this);
     }
@@ -264,6 +285,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public void commit() {
         throw new UnsupportedOperationException("Manual commit is not allowed over a Spring managed SqlSession");
     }
@@ -272,6 +294,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public void commit(boolean force) {
         throw new UnsupportedOperationException("Manual commit is not allowed over a Spring managed SqlSession");
     }
@@ -280,6 +303,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public void rollback() {
         throw new UnsupportedOperationException("Manual rollback is not allowed over a Spring managed SqlSession");
     }
@@ -288,6 +312,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public void rollback(boolean force) {
         throw new UnsupportedOperationException("Manual rollback is not allowed over a Spring managed SqlSession");
     }
@@ -296,6 +321,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public void close() {
         throw new UnsupportedOperationException("Manual close is not allowed over a Spring managed SqlSession");
     }
@@ -304,6 +330,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public void clearCache() {
         this.sqlSessionProxy.clearCache();
     }
@@ -312,6 +339,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public Configuration getConfiguration() {
         return this.sqlSessionFactory.getConfiguration();
     }
@@ -320,6 +348,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * {@inheritDoc}
      */
 
+    @Override
     public Connection getConnection() {
         return this.sqlSessionProxy.getConnection();
     }
@@ -330,6 +359,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * @since 1.0.2
      */
 
+    @Override
     public List<BatchResult> flushStatements() {
         return this.sqlSessionProxy.flushStatements();
     }
@@ -356,6 +386,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      * @see org.springframework.beans.factory.support.DisposableBeanAdapter#CLOSE_METHOD_NAME
      */
 
+    @Override
     public void destroy() throws Exception {
         // This method forces spring disposer to avoid call of
         // SqlSessionTemplate.close() which gives UnsupportedOperationException
@@ -370,6 +401,7 @@ public class MybatisSqlSessionTemplate implements SqlSession, DisposableBean {
      */
     private class SqlSessionInterceptor implements InvocationHandler {
 
+        @Override
         public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
             SqlSession sqlSession = MybatisSqlSessionTemplate.this.sqlSessionFactory
                     .openSession(MybatisSqlSessionTemplate.this.executorType);
