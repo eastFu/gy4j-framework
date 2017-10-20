@@ -1,6 +1,6 @@
-package cn.gyyx.frame.mybatis.plugins;
+package cn.gyyx.framework.mybatis.plugins;
 
-import cn.gyyx.frame.mybatis.plugins.pagination.Pagination;
+import cn.gyyx.framework.mybatis.plugins.pagination.Pagination;
 
 import java.util.Collections;
 import java.util.List;

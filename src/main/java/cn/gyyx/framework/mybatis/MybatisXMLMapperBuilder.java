@@ -1,7 +1,7 @@
-package cn.gyyx.frame.mybatis;
+package cn.gyyx.framework.mybatis;
 
-import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
-import cn.gyyx.frame.mybatis.mapper.BaseMapper;
+import cn.gyyx.framework.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.framework.mybatis.mapper.BaseMapper;
 import org.apache.ibatis.builder.*;
 import org.apache.ibatis.builder.xml.XMLMapperEntityResolver;
 import org.apache.ibatis.builder.xml.XMLStatementBuilder;

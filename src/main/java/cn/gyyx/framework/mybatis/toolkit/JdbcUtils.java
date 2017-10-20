@@ -1,6 +1,6 @@
-package cn.gyyx.frame.mybatis.toolkit;
+package cn.gyyx.framework.mybatis.toolkit;
 
-import cn.gyyx.frame.mybatis.enums.DBType;
+import cn.gyyx.framework.mybatis.enums.DBType;
 
 public class JdbcUtils {
 

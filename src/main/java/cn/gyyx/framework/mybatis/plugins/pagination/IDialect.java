@@ -1,4 +1,4 @@
-package cn.gyyx.frame.mybatis.plugins.pagination;
+package cn.gyyx.framework.mybatis.plugins.pagination;
 
 public interface IDialect {
 

@@ -1,15 +1,15 @@
-package cn.gyyx.frame.mybatis.mapper;
+package cn.gyyx.framework.mybatis.mapper;
 
-import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
-import cn.gyyx.frame.mybatis.enums.FieldStrategy;
-import cn.gyyx.frame.mybatis.enums.SqlMethod;
-import cn.gyyx.frame.mybatis.toolkit.CollectionUtils;
-import cn.gyyx.frame.mybatis.entity.TableFieldInfo;
-import cn.gyyx.frame.mybatis.entity.TableInfo;
-import cn.gyyx.frame.mybatis.enums.IdType;
-import cn.gyyx.frame.mybatis.toolkit.SqlReservedWords;
-import cn.gyyx.frame.mybatis.toolkit.StringUtils;
-import cn.gyyx.frame.mybatis.toolkit.TableInfoHelper;
+import cn.gyyx.framework.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.framework.mybatis.enums.FieldStrategy;
+import cn.gyyx.framework.mybatis.enums.SqlMethod;
+import cn.gyyx.framework.mybatis.toolkit.CollectionUtils;
+import cn.gyyx.framework.mybatis.entity.TableFieldInfo;
+import cn.gyyx.framework.mybatis.entity.TableInfo;
+import cn.gyyx.framework.mybatis.enums.IdType;
+import cn.gyyx.framework.mybatis.toolkit.SqlReservedWords;
+import cn.gyyx.framework.mybatis.toolkit.StringUtils;
+import cn.gyyx.framework.mybatis.toolkit.TableInfoHelper;
 import org.apache.ibatis.builder.MapperBuilderAssistant;
 import org.apache.ibatis.executor.keygen.Jdbc3KeyGenerator;
 import org.apache.ibatis.executor.keygen.KeyGenerator;
@@ -39,6 +39,7 @@ public class AutoSqlInjector implements ISqlInjector {
      * @param builderAssistant
      * @param mapperClass
      */
+    @Override
     public void inspectInject(MapperBuilderAssistant builderAssistant, Class<?> mapperClass) {
         String className = mapperClass.toString();
         Set<String> mapperRegistryCache = GlobalConfiguration.getMapperRegistryCache(builderAssistant.getConfiguration());
@@ -51,6 +52,7 @@ public class AutoSqlInjector implements ISqlInjector {
     /**
      * 注入单点 crudSql
      */
+    @Override
     public void inject(MapperBuilderAssistant builderAssistant, Class<?> mapperClass) {
         this.configuration = builderAssistant.getConfiguration();
         this.builderAssistant = builderAssistant;
@@ -806,6 +808,7 @@ public class AutoSqlInjector implements ISqlInjector {
     }
 
     // --------------------------------------------------------SqlRunner------------------------------------------------------------
+    @Override
     public void injectSqlRunner(Configuration configuration) {
         this.configuration = configuration;
         this.languageDriver = configuration.getDefaultScriptingLanguageInstance();

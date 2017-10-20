@@ -1,11 +1,11 @@
-package cn.gyyx.frame.mybatis.mapper;
+package cn.gyyx.framework.mybatis.mapper;
 
-import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
-import cn.gyyx.frame.mybatis.plugins.Page;
-import cn.gyyx.frame.mybatis.toolkit.CollectionUtils;
-import cn.gyyx.frame.mybatis.entity.TableInfo;
-import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
-import cn.gyyx.frame.mybatis.toolkit.TableInfoHelper;
+import cn.gyyx.framework.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.framework.mybatis.plugins.Page;
+import cn.gyyx.framework.mybatis.toolkit.CollectionUtils;
+import cn.gyyx.framework.mybatis.entity.TableInfo;
+import cn.gyyx.framework.mybatis.exceptions.MybatisPlusException;
+import cn.gyyx.framework.mybatis.toolkit.TableInfoHelper;
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
 import org.apache.ibatis.session.Configuration;

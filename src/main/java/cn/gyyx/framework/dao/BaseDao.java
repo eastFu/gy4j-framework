@@ -1,7 +1,7 @@
-package cn.gyyx.frame.dao;
+package cn.gyyx.framework.dao;
 
 
-import cn.gyyx.frame.mybatis.mapper.EntityWrapper;
+import cn.gyyx.framework.mybatis.mapper.EntityWrapper;
 
 import java.io.Serializable;
 import java.util.List;

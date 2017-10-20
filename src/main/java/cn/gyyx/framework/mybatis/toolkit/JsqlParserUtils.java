@@ -1,6 +1,6 @@
-package cn.gyyx.frame.mybatis.toolkit;
+package cn.gyyx.framework.mybatis.toolkit;
 
-import cn.gyyx.frame.mybatis.entity.CountOptimize;
+import cn.gyyx.framework.mybatis.entity.CountOptimize;
 import net.sf.jsqlparser.expression.Expression;
 import net.sf.jsqlparser.expression.Function;
 import net.sf.jsqlparser.expression.LongValue;

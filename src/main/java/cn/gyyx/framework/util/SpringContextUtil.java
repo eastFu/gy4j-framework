@@ -1,4 +1,4 @@
-package cn.gyyx.frame.util;
+package cn.gyyx.framework.util;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
@@ -19,6 +19,7 @@ public class SpringContextUtil implements ApplicationContextAware {
      * @param applicationContext
      * @throws BeansException
      */
+    @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         SpringContextUtil.applicationContext = applicationContext;
     }

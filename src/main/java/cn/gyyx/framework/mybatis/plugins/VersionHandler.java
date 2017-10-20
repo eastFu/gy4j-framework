@@ -1,4 +1,4 @@
-package cn.gyyx.frame.mybatis.plugins;
+package cn.gyyx.framework.mybatis.plugins;
 
 import java.lang.reflect.Field;
 

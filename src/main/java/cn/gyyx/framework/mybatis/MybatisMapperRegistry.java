@@ -1,6 +1,6 @@
-package cn.gyyx.frame.mybatis;
+package cn.gyyx.framework.mybatis;
 
-import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.framework.mybatis.entity.GlobalConfiguration;
 import org.apache.ibatis.binding.BindingException;
 import org.apache.ibatis.binding.MapperProxyFactory;
 import org.apache.ibatis.binding.MapperRegistry;
@@ -24,6 +24,7 @@ public class MybatisMapperRegistry extends MapperRegistry {
         GlobalConfiguration.getSqlInjector(config).injectSqlRunner(config);
     }
 
+    @Override
     @SuppressWarnings("unchecked")
     public <T> T getMapper(Class<T> type, SqlSession sqlSession) {
         final MapperProxyFactory<T> mapperProxyFactory = (MapperProxyFactory<T>) knownMappers.get(type);
@@ -37,6 +38,7 @@ public class MybatisMapperRegistry extends MapperRegistry {
         }
     }
 
+    @Override
     public <T> boolean hasMapper(Class<T> type) {
         return knownMappers.containsKey(type);
     }
@@ -73,6 +75,7 @@ public class MybatisMapperRegistry extends MapperRegistry {
     /**
      * @since 3.2.2
      */
+    @Override
     public Collection<Class<?>> getMappers() {
         return Collections.unmodifiableCollection(knownMappers.keySet());
     }

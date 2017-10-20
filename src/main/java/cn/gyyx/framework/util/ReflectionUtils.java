@@ -1,4 +1,4 @@
-package cn.gyyx.frame.util;
+package cn.gyyx.framework.util;
 
 import org.apache.commons.beanutils.ConvertUtils;
 import org.apache.commons.beanutils.PropertyUtils;

@@ -1,4 +1,4 @@
-package cn.gyyx.frame.util;
+package cn.gyyx.framework.util;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -48,7 +48,9 @@ public class Md5Util {
     }
 
     public static String getHashCode(Object object) throws IOException {
-        if (object == null) return "";
+        if (object == null) {
+            return "";
+        }
 
         String ss = null;
         ObjectOutputStream s = null;

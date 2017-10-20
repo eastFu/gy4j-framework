@@ -1,11 +1,11 @@
-package cn.gyyx.frame.mybatis.plugins;
+package cn.gyyx.framework.mybatis.plugins;
 
-import cn.gyyx.frame.mybatis.entity.CountOptimize;
-import cn.gyyx.frame.mybatis.plugins.pagination.DialectFactory;
-import cn.gyyx.frame.mybatis.plugins.pagination.Pagination;
-import cn.gyyx.frame.mybatis.toolkit.PluginUtils;
-import cn.gyyx.frame.mybatis.toolkit.SqlUtils;
-import cn.gyyx.frame.mybatis.toolkit.StringUtils;
+import cn.gyyx.framework.mybatis.entity.CountOptimize;
+import cn.gyyx.framework.mybatis.plugins.pagination.DialectFactory;
+import cn.gyyx.framework.mybatis.plugins.pagination.Pagination;
+import cn.gyyx.framework.mybatis.toolkit.PluginUtils;
+import cn.gyyx.framework.mybatis.toolkit.SqlUtils;
+import cn.gyyx.framework.mybatis.toolkit.StringUtils;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.executor.statement.StatementHandler;
 import org.apache.ibatis.mapping.BoundSql;
@@ -36,6 +36,7 @@ public class CachePaginationInterceptor extends PaginationInterceptor implements
      * Physical Pagination Interceptor for all the queries with parameter
      * {@link org.apache.ibatis.session.RowBounds}
      */
+    @Override
     public Object intercept(Invocation invocation) throws Throwable {
 
         Object target = invocation.getTarget();
@@ -93,7 +94,7 @@ public class CachePaginationInterceptor extends PaginationInterceptor implements
         }
         return invocation.proceed();
     }
-
+    @Override
     public Object plugin(Object target) {
         if (target instanceof Executor) {
             return Plugin.wrap(target, this);
@@ -104,6 +105,7 @@ public class CachePaginationInterceptor extends PaginationInterceptor implements
         return target;
     }
 
+    @Override
     public void setProperties(Properties prop) {
         String dialectType = prop.getProperty("dialectType");
         String dialectClazz = prop.getProperty("dialectClazz");
@@ -115,10 +117,12 @@ public class CachePaginationInterceptor extends PaginationInterceptor implements
         }
     }
 
+    @Override
     public void setDialectType(String dialectType) {
         this.dialectType = dialectType;
     }
 
+    @Override
     public void setOptimizeType(String optimizeType) {
         this.optimizeType = optimizeType;
     }

@@ -1,8 +1,8 @@
-package cn.gyyx.frame.model;
+package cn.gyyx.framework.model;
 
 
-import cn.gyyx.frame.mybatis.annotations.TableName;
-import cn.gyyx.frame.mybatis.annotations.TableId;
+import cn.gyyx.framework.mybatis.annotations.TableName;
+import cn.gyyx.framework.mybatis.annotations.TableId;
 
 import java.io.Serializable;
 

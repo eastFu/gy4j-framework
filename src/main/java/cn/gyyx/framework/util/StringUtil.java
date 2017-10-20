@@ -1,4 +1,4 @@
-package cn.gyyx.frame.util;
+package cn.gyyx.framework.util;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -89,10 +89,12 @@ public class StringUtil {
      */
     public static String[] splitString2Array(String strToSplit, String separator)
     {
-        if(strToSplit == null || strToSplit.length() == 0)
+        if(strToSplit == null || strToSplit.length() == 0) {
             return null;
-        if(separator == null || separator.length() == 0)
+        }
+        if(separator == null || separator.length() == 0) {
             return null;
+        }
         if (strToSplit.startsWith(separator))  //如果是以分隔符打头，则将打头的分隔符去掉
         {
             strToSplit = strToSplit.substring(separator.length());
@@ -110,8 +112,9 @@ public class StringUtil {
             index = pos + separator.length();
         }
 
-        if(count == 0)
-            return (new String[] {strToSplit});
+        if(count == 0) {
+            return (new String[]{strToSplit});
+        }
         String retStrArray[] = new String[count];
         index = 0;
         int pos;
@@ -681,13 +684,15 @@ public class StringUtil {
         String sMonth=sDate.substring(mid+1,end);
         //int nMonth=Integer.parseInt(sMonth)-1;
         int nMonth=Integer.parseInt(sMonth);
-        if(nMonth<10)
-            sMonth="0"+String.valueOf(nMonth);
+        if(nMonth<10) {
+            sMonth = "0" + String.valueOf(nMonth);
+        }
         //日
         String sDay=sDate.substring(end+1);
         int nDay=Integer.parseInt(sDay);
-        if(nDay<10)
-            sDay="0"+String.valueOf(nDay);
+        if(nDay<10) {
+            sDay = "0" + String.valueOf(nDay);
+        }
         //年-月-日
         buffer.append(sYear).append("-").append(sMonth).append("-").append(sDay);
 
@@ -965,17 +970,25 @@ public class StringUtil {
      */
     public static String replaceString(String strSource,String strOld,String strNew)
     {
-        if(strSource==null) return null;
+        if(strSource==null) {
+            return null;
+        }
 
         int length=strSource.length();
-        if(length<1) return strSource;
+        if(length<1) {
+            return strSource;
+        }
 
         int offset=0;
         int index=strSource.indexOf(strOld,offset);
-        if(index<0) return strSource;
+        if(index<0) {
+            return strSource;
+        }
 
         int oldLength=strOld.length();
-        if(oldLength<1) return strSource;
+        if(oldLength<1) {
+            return strSource;
+        }
 
         StringBuffer strBuff = new StringBuffer(1024);
         while(index>-1)
@@ -1064,14 +1077,17 @@ public class StringUtil {
         for (int i = 0; i < ipSegments.length; i ++)
         {
             {
-                if(ipSegments[i].length() == 1)
+                if(ipSegments[i].length() == 1) {
                     retVal = retVal + "00" + ipSegments[i];
+                }
 
-                if(ipSegments[i].length() == 2)
+                if(ipSegments[i].length() == 2) {
                     retVal = retVal + "0" + ipSegments[i];
+                }
 
-                if(ipSegments[i].length() == 3)
+                if(ipSegments[i].length() == 3) {
                     retVal = retVal + ipSegments[i];
+                }
 
             }
 
@@ -1194,21 +1210,25 @@ public class StringUtil {
             int tmp = data[i] & 0xff;
             int s1 = tmp / 16;
             int s2 = tmp % 16;
-            if (s1 < 10)
-                sb.append((char)(s1 + 48));
-            else
-            if (s1 >= 10)
-                sb.append((char)(s1 + 55));
-            if (s2 < 10)
-                sb.append((char)(s2 + 48));
-            else
-            if (s2 >= 10)
-                sb.append((char)(s2 + 55));
-            if (!isFormat)
+            if (s1 < 10) {
+                sb.append((char) (s1 + 48));
+            } else
+            if (s1 >= 10) {
+                sb.append((char) (s1 + 55));
+            }
+            if (s2 < 10) {
+                sb.append((char) (s2 + 48));
+            } else
+            if (s2 >= 10) {
+                sb.append((char) (s2 + 55));
+            }
+            if (!isFormat) {
                 continue;
+            }
             sb.append(" ");
-            if ((i + 1) % 16 == 0)
+            if ((i + 1) % 16 == 0) {
                 sb.append("\n");
+            }
         }
 
         return sb.toString();
@@ -1216,10 +1236,12 @@ public class StringUtil {
 
     public static int ByteArrayToInt(byte ba[]) throws NumberFormatException
     {
-        if (ba == null || ba.length == 0)
+        if (ba == null || ba.length == 0) {
             return 0;
-        if (ba.length > 4)
+        }
+        if (ba.length > 4) {
             throw new NumberFormatException("input contains more than 4 bytes");
+        }
         int temp = 0;
         int sum = ba[0] & 0xff;
         for (int i = 1; i < ba.length; i++)

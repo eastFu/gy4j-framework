@@ -1,9 +1,9 @@
-package cn.gyyx.frame.mybatis.plugins.pagination;
+package cn.gyyx.framework.mybatis.plugins.pagination;
 
-import cn.gyyx.frame.mybatis.enums.DBType;
-import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
-import cn.gyyx.frame.mybatis.plugins.pagination.dialects.*;
-import cn.gyyx.frame.mybatis.toolkit.StringUtils;
+import cn.gyyx.framework.mybatis.enums.DBType;
+import cn.gyyx.framework.mybatis.exceptions.MybatisPlusException;
+import cn.gyyx.framework.mybatis.plugins.pagination.dialects.*;
+import cn.gyyx.framework.mybatis.toolkit.StringUtils;
 import org.apache.ibatis.session.RowBounds;
 
 public class DialectFactory {

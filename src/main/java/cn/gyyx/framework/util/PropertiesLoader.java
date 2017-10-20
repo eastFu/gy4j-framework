@@ -1,5 +1,5 @@
 
-package cn.gyyx.frame.util;
+package cn.gyyx.framework.util;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,12 +1,12 @@
-package cn.gyyx.frame.mybatis.spring;
+package cn.gyyx.framework.mybatis.spring;
 
-import cn.gyyx.frame.mybatis.MybatisXMLConfigBuilder;
-import cn.gyyx.frame.mybatis.toolkit.PackageHelper;
-import cn.gyyx.frame.mybatis.MybatisConfiguration;
-import cn.gyyx.frame.mybatis.MybatisXMLMapperBuilder;
-import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
-import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
-import cn.gyyx.frame.mybatis.mapper.SqlRunner;
+import cn.gyyx.framework.mybatis.MybatisXMLConfigBuilder;
+import cn.gyyx.framework.mybatis.toolkit.PackageHelper;
+import cn.gyyx.framework.mybatis.MybatisConfiguration;
+import cn.gyyx.framework.mybatis.MybatisXMLMapperBuilder;
+import cn.gyyx.framework.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.framework.mybatis.exceptions.MybatisPlusException;
+import cn.gyyx.framework.mybatis.mapper.SqlRunner;
 import org.apache.ibatis.cache.Cache;
 import org.apache.ibatis.executor.ErrorContext;
 import org.apache.ibatis.io.VFS;

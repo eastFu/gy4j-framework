@@ -1,4 +1,4 @@
-package cn.gyyx.frame.mybatis.enums;
+package cn.gyyx.framework.mybatis.enums;
 
 public enum FieldStrategy {
     IGNORED(0, "ignored"), NOT_NULL(1, "not null"), NOT_EMPTY(2, "not empty");

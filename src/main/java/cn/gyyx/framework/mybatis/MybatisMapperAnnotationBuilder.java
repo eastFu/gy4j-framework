@@ -1,7 +1,7 @@
-package cn.gyyx.frame.mybatis;
+package cn.gyyx.framework.mybatis;
 
-import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
-import cn.gyyx.frame.mybatis.mapper.BaseMapper;
+import cn.gyyx.framework.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.framework.mybatis.mapper.BaseMapper;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.annotations.Options.FlushCachePolicy;
 import org.apache.ibatis.annotations.ResultMap;
@@ -62,6 +62,7 @@ public class MybatisMapperAnnotationBuilder extends MapperAnnotationBuilder {
         sqlProviderAnnotationTypes.add(DeleteProvider.class);
     }
 
+    @Override
     public void parse() {
         String resource = type.toString();
         if (!configuration.isResourceLoaded(resource)) {

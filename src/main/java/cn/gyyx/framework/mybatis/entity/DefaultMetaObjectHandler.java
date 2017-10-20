@@ -1,6 +1,6 @@
-package cn.gyyx.frame.mybatis.entity;
+package cn.gyyx.framework.mybatis.entity;
 
-import cn.gyyx.frame.mybatis.mapper.MetaObjectHandler;
+import cn.gyyx.framework.mybatis.mapper.MetaObjectHandler;
 import org.apache.ibatis.reflection.MetaObject;
 
 public class DefaultMetaObjectHandler extends MetaObjectHandler {

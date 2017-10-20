@@ -1,4 +1,4 @@
-package cn.gyyx.frame.mybatis.toolkit;
+package cn.gyyx.framework.mybatis.toolkit;
 
 import com.alibaba.druid.sql.PagerUtils;
 

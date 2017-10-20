@@ -1,7 +1,7 @@
-package cn.gyyx.frame.mybatis.mapper;
+package cn.gyyx.framework.mybatis.mapper;
 
 
-import cn.gyyx.frame.mybatis.entity.TableInfo;
+import cn.gyyx.framework.mybatis.entity.TableInfo;
 
 public interface IKeyGenerator {
 

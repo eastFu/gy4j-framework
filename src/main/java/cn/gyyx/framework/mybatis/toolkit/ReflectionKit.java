@@ -1,9 +1,9 @@
-package cn.gyyx.frame.mybatis.toolkit;
+package cn.gyyx.framework.mybatis.toolkit;
 
-import cn.gyyx.frame.mybatis.entity.TableFieldInfo;
-import cn.gyyx.frame.mybatis.entity.TableInfo;
-import cn.gyyx.frame.mybatis.enums.FieldStrategy;
-import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
+import cn.gyyx.framework.mybatis.entity.TableFieldInfo;
+import cn.gyyx.framework.mybatis.entity.TableInfo;
+import cn.gyyx.framework.mybatis.enums.FieldStrategy;
+import cn.gyyx.framework.mybatis.exceptions.MybatisPlusException;
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
 

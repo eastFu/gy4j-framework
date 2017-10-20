@@ -1,4 +1,4 @@
-package cn.gyyx.frame.cache;
+package cn.gyyx.framework.cache;
 
 
 import org.apache.log4j.Logger;

@@ -1,10 +1,10 @@
-package cn.gyyx.frame.mybatis.plugins;
+package cn.gyyx.framework.mybatis.plugins;
 
-import cn.gyyx.frame.mybatis.mapper.EntityWrapper;
-import cn.gyyx.frame.mybatis.toolkit.PluginUtils;
-import cn.gyyx.frame.mybatis.annotations.TableField;
-import cn.gyyx.frame.mybatis.annotations.Version;
-import cn.gyyx.frame.mybatis.toolkit.StringUtils;
+import cn.gyyx.framework.mybatis.mapper.EntityWrapper;
+import cn.gyyx.framework.mybatis.toolkit.PluginUtils;
+import cn.gyyx.framework.mybatis.annotations.TableField;
+import cn.gyyx.framework.mybatis.annotations.Version;
+import cn.gyyx.framework.mybatis.toolkit.StringUtils;
 import net.sf.jsqlparser.expression.BinaryExpression;
 import net.sf.jsqlparser.expression.Expression;
 import net.sf.jsqlparser.expression.operators.conditional.AndExpression;
@@ -63,6 +63,7 @@ public final class OptimisticLockerInterceptor implements Interceptor {
 		typeHandlers.put(Timestamp.class, new TimestampTypeHandler());
 	}
 
+	@Override
 	public Object intercept(Invocation invocation) throws Exception {
 		StatementHandler statementHandler = (StatementHandler) PluginUtils.realTarget(invocation.getTarget());
 		MetaObject metaObject = SystemMetaObject.forObject(statementHandler);
@@ -220,14 +221,14 @@ public final class OptimisticLockerInterceptor implements Interceptor {
 
 	// *****************************基本类型处理器*****************************
 	private static class IntegerTypeHandler implements VersionHandler<Integer> {
-
+	    @Override
 		public void plusVersion(Object paramObj, Field field, Integer versionValue) throws Exception {
 			field.set(paramObj, versionValue + 1);
 		}
 	}
 
 	private static class LongTypeHandler implements VersionHandler<Long> {
-
+        @Override
 		public void plusVersion(Object paramObj, Field field, Long versionValue) throws Exception {
 			field.set(paramObj, versionValue + 1);
 		}
@@ -235,16 +236,16 @@ public final class OptimisticLockerInterceptor implements Interceptor {
 
 	// ***************************** 时间类型处理器*****************************
 	private static class DateTypeHandler implements VersionHandler<Date> {
-
+        @Override
 		public void plusVersion(Object paramObj, Field field, Date versionValue) throws Exception {
 			field.set(paramObj, new Date());
 		}
 	}
 
 	private static class TimestampTypeHandler implements VersionHandler<Timestamp> {
-
+        @Override
 		public void plusVersion(Object paramObj, Field field, Timestamp versionValue) throws Exception {
-			field.set(paramObj, new Timestamp(new Date().getTime()));
+			field.set(paramObj, new Timestamp(System.currentTimeMillis()));
 		}
 	}
 

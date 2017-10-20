@@ -1,7 +1,7 @@
-package cn.gyyx.frame.mybatis.mapper;
+package cn.gyyx.framework.mybatis.mapper;
 
-import cn.gyyx.frame.mybatis.MybatisAbstractSQL;
-import cn.gyyx.frame.mybatis.toolkit.StringUtils;
+import cn.gyyx.framework.mybatis.MybatisAbstractSQL;
+import cn.gyyx.framework.mybatis.toolkit.StringUtils;
 
 @SuppressWarnings("serial")
 public class SqlPlus extends MybatisAbstractSQL<SqlPlus> {

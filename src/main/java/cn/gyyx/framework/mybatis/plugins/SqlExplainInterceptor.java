@@ -1,10 +1,10 @@
-package cn.gyyx.frame.mybatis.plugins;
+package cn.gyyx.framework.mybatis.plugins;
 
-import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
-import cn.gyyx.frame.mybatis.enums.DBType;
-import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
-import cn.gyyx.frame.mybatis.toolkit.StringUtils;
-import cn.gyyx.frame.mybatis.toolkit.VersionUtils;
+import cn.gyyx.framework.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.framework.mybatis.enums.DBType;
+import cn.gyyx.framework.mybatis.exceptions.MybatisPlusException;
+import cn.gyyx.framework.mybatis.toolkit.StringUtils;
+import cn.gyyx.framework.mybatis.toolkit.VersionUtils;
 import org.apache.ibatis.builder.StaticSqlSource;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.logging.Log;
@@ -33,7 +33,7 @@ public class SqlExplainInterceptor implements Interceptor {
      * 发现执行全表 delete update 语句是否停止执行
      */
     private boolean stopProceed = false;
-
+    @Override
     public Object intercept(Invocation invocation) throws Throwable {
         /**
          * 处理 DELETE UPDATE 语句
@@ -102,14 +102,14 @@ public class SqlExplainInterceptor implements Interceptor {
             throw new MybatisPlusException(e);
         }
     }
-
+    @Override
     public Object plugin(Object target) {
         if (target instanceof Executor) {
             return Plugin.wrap(target, this);
         }
         return target;
     }
-
+    @Override
     public void setProperties(Properties prop) {
         String stopProceed = prop.getProperty("stopProceed");
         if (StringUtils.isNotEmpty(stopProceed)) {

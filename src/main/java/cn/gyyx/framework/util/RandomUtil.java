@@ -1,4 +1,4 @@
-package cn.gyyx.frame.util;
+package cn.gyyx.framework.util;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,16 +25,18 @@ public class RandomUtil {
      */
     public static String createRandomNum(int nBit, int mode)
     {
-        if(nBit < 1 || nBit > 50)
+        if(nBit < 1 || nBit > 50) {
             nBit = 8;
+        }
 
         String sStr = "1,2,3,4,5,6,7,8,9,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
         String[] str = new String[30];
 
-        if(mode == 1)
-            str = StringUtil.splitString2Array(sStr.substring(0,17), ",");
-        else
+        if(mode == 1) {
+            str = StringUtil.splitString2Array(sStr.substring(0, 17), ",");
+        } else {
             str = StringUtil.splitString2Array(sStr, ",");
+        }
 
         String sRet = "";
         for(int i=0; i<nBit; i++)
@@ -47,16 +49,18 @@ public class RandomUtil {
 
     public static String createRandomNumUpper(int nBit, int mode)
     {
-        if(nBit < 1 || nBit > 50)
+        if(nBit < 1 || nBit > 50) {
             nBit = 8;
+        }
 
         String sStr = "1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z";
         String[] str = new String[30];
 
-        if(mode == 1)
-            str = StringUtil.splitString2Array(sStr.substring(0,17), ",");
-        else
+        if(mode == 1) {
+            str = StringUtil.splitString2Array(sStr.substring(0, 17), ",");
+        } else {
             str = StringUtil.splitString2Array(sStr, ",");
+        }
 
         String sRet = "";
         for(int i=0; i<nBit; i++)

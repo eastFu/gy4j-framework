@@ -1,10 +1,10 @@
-package cn.gyyx.frame.mybatis.plugins;
+package cn.gyyx.framework.mybatis.plugins;
 
-import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
-import cn.gyyx.frame.mybatis.toolkit.PluginUtils;
-import cn.gyyx.frame.mybatis.toolkit.SqlUtils;
-import cn.gyyx.frame.mybatis.toolkit.StringUtils;
-import cn.gyyx.frame.mybatis.toolkit.SystemClock;
+import cn.gyyx.framework.mybatis.exceptions.MybatisPlusException;
+import cn.gyyx.framework.mybatis.toolkit.PluginUtils;
+import cn.gyyx.framework.mybatis.toolkit.SqlUtils;
+import cn.gyyx.framework.mybatis.toolkit.StringUtils;
+import cn.gyyx.framework.mybatis.toolkit.SystemClock;
 import org.apache.ibatis.executor.statement.StatementHandler;
 import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.plugin.*;
@@ -27,7 +27,7 @@ public class PerformanceInterceptor implements Interceptor {
     private long maxTime = 0;
 
     private boolean format = false;
-
+    @Override
     public Object intercept(Invocation invocation) throws Throwable {
         Statement statement;
         Object firstArg = invocation.getArgs()[0];
@@ -62,14 +62,14 @@ public class PerformanceInterceptor implements Interceptor {
         }
         return result;
     }
-
+    @Override
     public Object plugin(Object target) {
         if (target instanceof StatementHandler) {
             return Plugin.wrap(target, this);
         }
         return target;
     }
-
+    @Override
     public void setProperties(Properties prop) {
         String maxTime = prop.getProperty("maxTime");
         String format = prop.getProperty("format");

@@ -1,4 +1,4 @@
-package cn.gyyx.frame.mybatis.mapper;
+package cn.gyyx.framework.mybatis.mapper;
 
 import org.apache.ibatis.reflection.MetaObject;
 

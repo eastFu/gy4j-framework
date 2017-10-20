@@ -1,10 +1,10 @@
-package cn.gyyx.frame.mybatis.mapper;
+package cn.gyyx.framework.mybatis.mapper;
 
-import cn.gyyx.frame.mybatis.entity.TableFieldInfo;
-import cn.gyyx.frame.mybatis.enums.SqlMethod;
-import cn.gyyx.frame.mybatis.toolkit.StringUtils;
-import cn.gyyx.frame.mybatis.entity.TableInfo;
-import cn.gyyx.frame.mybatis.toolkit.SqlReservedWords;
+import cn.gyyx.framework.mybatis.entity.TableFieldInfo;
+import cn.gyyx.framework.mybatis.enums.SqlMethod;
+import cn.gyyx.framework.mybatis.toolkit.StringUtils;
+import cn.gyyx.framework.mybatis.entity.TableInfo;
+import cn.gyyx.framework.mybatis.toolkit.SqlReservedWords;
 import org.apache.ibatis.mapping.SqlSource;
 import org.apache.ibatis.scripting.defaults.RawSqlSource;
 
@@ -88,6 +88,7 @@ public class LogicSqlInjector extends AutoSqlInjector {
 	 * @param modelClass
 	 * @param table
 	 */
+    @Override
 	protected void injectSelectByIdSql(boolean batch, Class<?> mapperClass, Class<?> modelClass, TableInfo table) {
 		if (table.isLogicDelete()) {
 			SqlMethod sqlMethod = SqlMethod.LOGIC_SELECT_BY_ID;
@@ -120,6 +121,7 @@ public class LogicSqlInjector extends AutoSqlInjector {
 	 * @param modelClass
 	 * @param table
 	 */
+    @Override
 	protected void injectUpdateByIdSql(boolean selective, Class<?> mapperClass, Class<?> modelClass, TableInfo table) {
 		if (table.isLogicDelete()) {
 			SqlMethod sqlMethod = selective ? SqlMethod.LOGIC_UPDATE_BY_ID : SqlMethod.LOGIC_UPDATE_ALL_COLUMN_BY_ID;

@@ -1,4 +1,4 @@
-package cn.gyyx.frame.mybatis.enums;
+package cn.gyyx.framework.mybatis.enums;
 
 public enum IdType {
     AUTO(0, "数据库ID自增"), INPUT(1, "用户输入ID"),

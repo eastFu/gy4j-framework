@@ -6,7 +6,7 @@
  *
  * 注意：本内容仅限于公司内部使用，禁止转发。
  * ------------------------------------------------*/
-package cn.gyyx.frame.util;
+package cn.gyyx.framework.util;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -42,8 +42,9 @@ public class StreamUtils {
 		String string = null;
 		int count = 0;
 		try {
-			while ((count = in.read(data, 0, BUFFER_SIZE)) != -1)
-				outStream.write(data, 0, count);
+			while ((count = in.read(data, 0, BUFFER_SIZE)) != -1) {
+                outStream.write(data, 0, count);
+            }
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -71,8 +72,9 @@ public class StreamUtils {
 		byte[] data = new byte[BUFFER_SIZE];
 		int count = -1;
 		try {
-			while ((count = in.read(data, 0, BUFFER_SIZE)) != -1)
-				outStream.write(data, 0, count);
+			while ((count = in.read(data, 0, BUFFER_SIZE)) != -1) {
+                outStream.write(data, 0, count);
+            }
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -130,8 +132,9 @@ public class StreamUtils {
 		ByteArrayOutputStream outStream = new ByteArrayOutputStream();
 		byte[] data = new byte[BUFFER_SIZE];
 		int count = -1;
-		while ((count = in.read(data, 0, BUFFER_SIZE)) != -1)
-			outStream.write(data, 0, count);
+		while ((count = in.read(data, 0, BUFFER_SIZE)) != -1) {
+            outStream.write(data, 0, count);
+        }
 
 		data = null;
 		return outStream.toByteArray();

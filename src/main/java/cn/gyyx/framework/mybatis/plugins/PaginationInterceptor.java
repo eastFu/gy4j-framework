@@ -1,13 +1,13 @@
-package cn.gyyx.frame.mybatis.plugins;
+package cn.gyyx.framework.mybatis.plugins;
 
-import cn.gyyx.frame.mybatis.entity.CountOptimize;
-import cn.gyyx.frame.mybatis.MybatisDefaultParameterHandler;
-import cn.gyyx.frame.mybatis.plugins.pagination.DialectFactory;
-import cn.gyyx.frame.mybatis.plugins.pagination.Pagination;
-import cn.gyyx.frame.mybatis.toolkit.JdbcUtils;
-import cn.gyyx.frame.mybatis.toolkit.PluginUtils;
-import cn.gyyx.frame.mybatis.toolkit.SqlUtils;
-import cn.gyyx.frame.mybatis.toolkit.StringUtils;
+import cn.gyyx.framework.mybatis.entity.CountOptimize;
+import cn.gyyx.framework.mybatis.MybatisDefaultParameterHandler;
+import cn.gyyx.framework.mybatis.plugins.pagination.DialectFactory;
+import cn.gyyx.framework.mybatis.plugins.pagination.Pagination;
+import cn.gyyx.framework.mybatis.toolkit.JdbcUtils;
+import cn.gyyx.framework.mybatis.toolkit.PluginUtils;
+import cn.gyyx.framework.mybatis.toolkit.SqlUtils;
+import cn.gyyx.framework.mybatis.toolkit.StringUtils;
 import org.apache.ibatis.executor.statement.StatementHandler;
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
@@ -44,6 +44,7 @@ public class PaginationInterceptor implements Interceptor {
     /**
      * Physical Pagination Interceptor for all the queries with parameter {@link org.apache.ibatis.session.RowBounds}
      */
+    @Override
     public Object intercept(Invocation invocation) throws Throwable {
         StatementHandler statementHandler = (StatementHandler) PluginUtils.realTarget(invocation.getTarget());
         MetaObject metaStatementHandler = SystemMetaObject.forObject(statementHandler);
@@ -121,14 +122,14 @@ public class PaginationInterceptor implements Interceptor {
             logger.error("Error: Method queryTotal execution error !", e);
         }
     }
-
+    @Override
     public Object plugin(Object target) {
         if (target instanceof StatementHandler) {
             return Plugin.wrap(target, this);
         }
         return target;
     }
-
+    @Override
     public void setProperties(Properties prop) {
         String dialectType = prop.getProperty("dialectType");
         String dialectClazz = prop.getProperty("dialectClazz");

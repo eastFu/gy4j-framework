@@ -1,9 +1,9 @@
-package cn.gyyx.frame.mybatis.toolkit;
+package cn.gyyx.framework.mybatis.toolkit;
 
-import cn.gyyx.frame.mybatis.entity.CountOptimize;
-import cn.gyyx.frame.mybatis.enums.Optimize;
-import cn.gyyx.frame.mybatis.enums.SqlLike;
-import cn.gyyx.frame.mybatis.plugins.pagination.Pagination;
+import cn.gyyx.framework.mybatis.entity.CountOptimize;
+import cn.gyyx.framework.mybatis.enums.Optimize;
+import cn.gyyx.framework.mybatis.enums.SqlLike;
+import cn.gyyx.framework.mybatis.plugins.pagination.Pagination;
 
 public class SqlUtils {
 

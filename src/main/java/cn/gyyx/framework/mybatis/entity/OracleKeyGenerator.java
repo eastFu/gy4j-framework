@@ -1,6 +1,6 @@
-package cn.gyyx.frame.mybatis.entity;
+package cn.gyyx.framework.mybatis.entity;
 
-import cn.gyyx.frame.mybatis.mapper.IKeyGenerator;
+import cn.gyyx.framework.mybatis.mapper.IKeyGenerator;
 
 public class OracleKeyGenerator implements IKeyGenerator {
 

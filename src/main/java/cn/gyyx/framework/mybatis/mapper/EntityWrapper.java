@@ -1,7 +1,7 @@
-package cn.gyyx.frame.mybatis.mapper;
+package cn.gyyx.framework.mybatis.mapper;
 
-import cn.gyyx.frame.mybatis.toolkit.ReflectionKit;
-import cn.gyyx.frame.mybatis.toolkit.StringUtils;
+import cn.gyyx.framework.mybatis.toolkit.ReflectionKit;
+import cn.gyyx.framework.mybatis.toolkit.StringUtils;
 
 @SuppressWarnings("serial")
 public class EntityWrapper<T> extends Wrapper<T> {
@@ -23,7 +23,7 @@ public class EntityWrapper<T> extends Wrapper<T> {
         this.entity = entity;
         this.sqlSelect = sqlSelect;
     }
-
+    @Override
     public T getEntity() {
         return entity;
     }

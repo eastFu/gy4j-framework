@@ -1,7 +1,7 @@
-package cn.gyyx.frame.mybatis.spring;
+package cn.gyyx.framework.mybatis.spring;
 
-import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
-import cn.gyyx.frame.mybatis.toolkit.SystemClock;
+import cn.gyyx.framework.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.framework.mybatis.toolkit.SystemClock;
 import org.apache.ibatis.binding.MapperRegistry;
 import org.apache.ibatis.builder.xml.XMLMapperBuilder;
 import org.apache.ibatis.builder.xml.XMLMapperEntityResolver;
@@ -104,6 +104,7 @@ public class MybatisMapperRefresh implements Runnable {
         this.run();
     }
 
+    @Override
     public void run() {
         final GlobalConfiguration globalConfig = GlobalConfiguration.getGlobalConfig(configuration);
         /*
@@ -114,6 +115,7 @@ public class MybatisMapperRefresh implements Runnable {
             final MybatisMapperRefresh runnable = this;
             new Thread(new Runnable() {
 
+                @Override
                 public void run() {
                     if (fileSet == null) {
                         fileSet = new HashSet<>();

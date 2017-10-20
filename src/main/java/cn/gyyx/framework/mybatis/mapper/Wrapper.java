@@ -1,9 +1,9 @@
-package cn.gyyx.frame.mybatis.mapper;
+package cn.gyyx.framework.mybatis.mapper;
 
-import cn.gyyx.frame.mybatis.entity.Column;
-import cn.gyyx.frame.mybatis.enums.SqlLike;
-import cn.gyyx.frame.mybatis.toolkit.*;
-import cn.gyyx.frame.mybatis.exceptions.MybatisPlusException;
+import cn.gyyx.framework.mybatis.entity.Column;
+import cn.gyyx.framework.mybatis.enums.SqlLike;
+import cn.gyyx.framework.mybatis.toolkit.*;
+import cn.gyyx.framework.mybatis.exceptions.MybatisPlusException;
 
 import java.io.Serializable;
 import java.util.*;
@@ -97,6 +97,7 @@ public abstract class Wrapper<T> implements Serializable {
      */
     public abstract String getSqlSegment();
 
+    @Override
     public String toString() {
         String sqlSegment = getSqlSegment();
         if (StringUtils.isNotEmpty(sqlSegment)) {
@@ -543,8 +544,9 @@ public abstract class Wrapper<T> implements Serializable {
      * @return this
      */
     public Wrapper<T> in(String column, Collection<?> value) {
-        if (CollectionUtils.isNotEmpty(value))
+        if (CollectionUtils.isNotEmpty(value)){
             sql.WHERE(formatSql(inExpression(column, value, false), value.toArray()));
+        }
         return this;
     }
 
@@ -556,8 +558,9 @@ public abstract class Wrapper<T> implements Serializable {
      * @return this
      */
     public Wrapper<T> notIn(String column, Collection<?> value) {
-        if (CollectionUtils.isNotEmpty(value))
+        if (CollectionUtils.isNotEmpty(value)){
             sql.WHERE(formatSql(inExpression(column, value, true), value.toArray()));
+        }
         return this;
     }
 
@@ -569,8 +572,9 @@ public abstract class Wrapper<T> implements Serializable {
      * @return this
      */
     public Wrapper<T> in(String column, Object[] value) {
-        if (ArrayUtils.isNotEmpty(value))
+        if (ArrayUtils.isNotEmpty(value)){
             sql.WHERE(formatSql(inExpression(column, Arrays.asList(value), false), value));
+        }
         return this;
     }
 
@@ -582,8 +586,9 @@ public abstract class Wrapper<T> implements Serializable {
      * @return this
      */
     public Wrapper<T> notIn(String column, Object... value) {
-        if (ArrayUtils.isNotEmpty(value))
+        if (ArrayUtils.isNotEmpty(value)){
             sql.WHERE(formatSql(inExpression(column, Arrays.asList(value), true), value));
+        }
         return this;
     }
 
