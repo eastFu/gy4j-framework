@@ -1,4 +1,4 @@
-package cn.gyyx.frame.mybatis.exceptions;
+package cn.gyyx.framework.mybatis.exceptions;
 
 public class MybatisPlusException extends RuntimeException {
 

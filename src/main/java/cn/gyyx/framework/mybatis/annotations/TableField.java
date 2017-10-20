@@ -1,6 +1,6 @@
-package cn.gyyx.frame.mybatis.annotations;
+package cn.gyyx.framework.mybatis.annotations;
 
-import cn.gyyx.frame.mybatis.enums.FieldStrategy;
+import cn.gyyx.framework.mybatis.enums.FieldStrategy;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
