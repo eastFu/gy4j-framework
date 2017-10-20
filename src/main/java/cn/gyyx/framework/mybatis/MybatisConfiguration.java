@@ -1,6 +1,6 @@
-package cn.gyyx.frame.mybatis;
+package cn.gyyx.framework.mybatis;
 
-import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.framework.mybatis.entity.GlobalConfiguration;
 import org.apache.ibatis.binding.MapperRegistry;
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
