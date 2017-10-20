@@ -1,13 +1,13 @@
-package cn.gyyx.frame.mybatis;
+package cn.gyyx.framework.mybatis;
 
-import cn.gyyx.frame.mybatis.entity.GlobalConfiguration;
-import cn.gyyx.frame.mybatis.mapper.MetaObjectHandler;
-import cn.gyyx.frame.mybatis.toolkit.MapUtils;
-import cn.gyyx.frame.mybatis.entity.TableInfo;
-import cn.gyyx.frame.mybatis.enums.IdType;
-import cn.gyyx.frame.mybatis.toolkit.IdWorker;
-import cn.gyyx.frame.mybatis.toolkit.StringUtils;
-import cn.gyyx.frame.mybatis.toolkit.TableInfoHelper;
+import cn.gyyx.framework.mybatis.entity.GlobalConfiguration;
+import cn.gyyx.framework.mybatis.mapper.MetaObjectHandler;
+import cn.gyyx.framework.mybatis.toolkit.MapUtils;
+import cn.gyyx.framework.mybatis.entity.TableInfo;
+import cn.gyyx.framework.mybatis.enums.IdType;
+import cn.gyyx.framework.mybatis.toolkit.IdWorker;
+import cn.gyyx.framework.mybatis.toolkit.StringUtils;
+import cn.gyyx.framework.mybatis.toolkit.TableInfoHelper;
 import org.apache.ibatis.executor.ErrorContext;
 import org.apache.ibatis.mapping.*;
 import org.apache.ibatis.reflection.MetaObject;
