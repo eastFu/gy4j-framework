@@ -1,12 +1,16 @@
 package cn.gyyx.framework.model;
 
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+
 import java.io.Serializable;
 
-/**
- * Created by Administrator on 2017/9/27 0027.
- */
 public class BaseModel implements Serializable{
 
     private static final long serialVersionUID = 1L;
-    
+
+    @Override
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this);
+    }
+
 }
