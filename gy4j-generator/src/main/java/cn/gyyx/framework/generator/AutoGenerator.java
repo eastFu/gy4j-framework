@@ -103,11 +103,11 @@ public class AutoGenerator extends AbstractGenerator {
             /* ---------- 添加导入包 ---------- */
             if (config.getGlobalConfig().isActiveRecord()) {
                 // 开启 ActiveRecord 模式
-                tableInfo.setImportPackages("Model");
+                tableInfo.setImportPackages("cn.gyyx.framework.mybatis.entity.BaseEntity");
             }
             if (tableInfo.isConvert()) {
                 // 表注解
-                tableInfo.setImportPackages("TableName");
+                tableInfo.setImportPackages("cn.gyyx.framework.mybatis.annotations.TableName");
             }
             if (StringUtils.isNotEmpty(config.getSuperEntityClass())) {
                 // 父实体

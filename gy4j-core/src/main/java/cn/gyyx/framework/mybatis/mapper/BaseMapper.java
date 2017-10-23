@@ -7,15 +7,20 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @ClassName: BaseMapper
+ * @Description: 底层通用CRUD Mapper接口
+ * @author East.F
+ * @date 2017年10月23日 上午9:23:29
+ * @param <T>
+ */
 public interface BaseMapper<T> {
 
     /**
      * <p>
      * 插入一条记录
      * </p>
-     *
-     * @param entity
-     *            实体对象
+     * @param entity   实体对象
      * @return int
      */
     Integer insert(T entity);
@@ -79,9 +84,7 @@ public interface BaseMapper<T> {
      * <p>
      * 根据 ID 修改
      * </p>
-     *
-     * @param entity
-     *            实体对象
+     * @param entity 实体对象
      * @return int
      */
     Integer updateById(T entity);
@@ -90,9 +93,7 @@ public interface BaseMapper<T> {
      * <p>
      * 根据 ID 修改
      * </p>
-     *
-     * @param entity
-     *            实体对象
+     * @param entity 实体对象
      * @return int
      */
     Integer updateAllColumnById(T entity);
@@ -101,11 +102,8 @@ public interface BaseMapper<T> {
      * <p>
      * 根据 whereEntity 条件，更新记录
      * </p>
-     *
-     * @param entity
-     *            实体对象
-     * @param wrapper
-     *            实体对象封装操作类（可以为 null）
+     * @param entity 实体对象
+     * @param wrapper 实体对象封装操作类（可以为 null）
      * @return
      */
     Integer update(@Param("et") T entity, @Param("ew") Wrapper<T> wrapper);

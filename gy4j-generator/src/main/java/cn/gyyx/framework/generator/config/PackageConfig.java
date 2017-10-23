@@ -8,7 +8,7 @@ public class PackageConfig {
     /**
      * 父包名。如果为空，将下面子包名必须写全部， 否则就只需写子包名
      */
-    private String parent = "com.baomidou";
+    private String parent = "cn.gyyx";
 
     /**
      * 父包模块名。

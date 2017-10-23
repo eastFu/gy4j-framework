@@ -1,13 +1,12 @@
 package cn.gyyx.framework.generator;
 
-import cn.gyyx.framework.generator.config.DataSourceConfig;
-import cn.gyyx.framework.generator.config.FileOutConfig;
-import cn.gyyx.framework.generator.config.GlobalConfig;
-import cn.gyyx.framework.generator.config.PackageConfig;
+import cn.gyyx.framework.generator.config.*;
 import cn.gyyx.framework.generator.config.converts.MySqlTypeConvert;
 import cn.gyyx.framework.generator.config.po.TableInfo;
 import cn.gyyx.framework.generator.config.rules.DbColumnType;
 import cn.gyyx.framework.generator.config.rules.DbType;
+import cn.gyyx.framework.generator.config.rules.NamingStrategy;
+import org.apache.log4j.BasicConfigurator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,6 +70,15 @@ public class SimpleGenerator extends AutoGenerator{
         initMapperXml();
     }
 
+    private void initStrategyCofig(){
+        // 策略配置
+        StrategyConfig strategy = new StrategyConfig();
+        // strategy.setCapitalMode(true);// 全局大写命名 ORACLE 注意
+        //strategy.setTablePrefix(new String[] { "tlog_", "tsys_" });// 此处可以修改为您的表前缀
+        strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
+        setStrategy(strategy);
+    }
+
     public void run(String outPath,String author){
         GlobalConfig gc = new GlobalConfig();
         gc.setOutputDir(outPath);
@@ -81,7 +89,10 @@ public class SimpleGenerator extends AutoGenerator{
         gc.setBaseColumnList(false);// XML columList
         gc.setAuthor(author);
         setGlobalConfig(gc);
-        //BasicConfigurator.configure();
+
+        initStrategyCofig();
+
+        BasicConfigurator.configure();
         execute();
     }
 }

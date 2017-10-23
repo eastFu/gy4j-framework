@@ -139,15 +139,15 @@ public class TableInfo {
                 if (field.isKeyFlag()) {
                     // 主键
                     if (field.isConvert() || field.isKeyIdentityFlag()) {
-                        pkgSet.add("TableId");
+                        pkgSet.add("cn.gyyx.framework.mybatis.annotations.TableId");
                     }
                     // 自增
                     if (field.isKeyIdentityFlag()) {
-                        pkgSet.add("IdType");
+                        pkgSet.add("cn.gyyx.framework.mybatis.annotations.IdType");
                     }
                 } else if (field.isConvert()) {
                     // 普通字段
-                    pkgSet.add("TableField");
+                    pkgSet.add("cn.gyyx.framework.mybatis.annotations.TableField");
                 }
             }
             if (!pkgSet.isEmpty()) {

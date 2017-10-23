@@ -41,8 +41,8 @@ public class ConstVal {
     public static final String VM_LOADPATH_KEY = "file.resource.loader.class";
     public static final String VM_LOADPATH_VALUE = "org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader";
 
-    public static final String SUPERD_MAPPER_CLASS = "BaseMapper";
-    public static final String SUPERD_SERVICE_CLASS = "IService";
-    public static final String SUPERD_SERVICEIMPL_CLASS = "ServiceImpl";
+    public static final String SUPERD_MAPPER_CLASS = "cn.gyyx.framework.mybatis.mapper.BaseMapper";
+    public static final String SUPERD_SERVICE_CLASS = "cn.gyyx.framework.mybatis.service.IService";
+    public static final String SUPERD_SERVICEIMPL_CLASS = "cn.gyyx.framework.mybatis.service.impl.ServiceImpl";
 
 }
