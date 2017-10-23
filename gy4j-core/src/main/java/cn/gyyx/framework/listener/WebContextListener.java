@@ -12,8 +12,6 @@ import javax.servlet.ServletContext;
  */
 public class WebContextListener extends ContextLoaderListener {
 
-
-
     private static final Logger LOG = LoggerFactory.getLogger(WebContextListener.class);
 
     @Override

@@ -6,7 +6,6 @@ import cn.gyyx.framework.generator.config.po.TableInfo;
 import cn.gyyx.framework.generator.config.rules.DbColumnType;
 import cn.gyyx.framework.generator.config.rules.DbType;
 import cn.gyyx.framework.generator.config.rules.NamingStrategy;
-import org.apache.log4j.BasicConfigurator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -89,10 +88,7 @@ public class SimpleGenerator extends AutoGenerator{
         gc.setBaseColumnList(false);// XML columList
         gc.setAuthor(author);
         setGlobalConfig(gc);
-
         initStrategyCofig();
-
-        BasicConfigurator.configure();
         execute();
     }
 }

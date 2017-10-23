@@ -32,6 +32,7 @@ public class AutoGenerator extends AbstractGenerator {
      */
     public void execute() {
         logger.debug("==========================准备生成文件...==========================");
+        System.out.println("==========================准备生成文件...==========================");
         // 初始化配置
         initConfig();
         // 创建输出文件路径
@@ -53,6 +54,7 @@ public class AutoGenerator extends AbstractGenerator {
                         Runtime.getRuntime().exec("cmd /c start " + config.getGlobalConfig().getOutputDir());
                     } else {
                         logger.debug("文件输出目录:" + config.getGlobalConfig().getOutputDir());
+                        System.out.println("文件输出目录:" + config.getGlobalConfig().getOutputDir());
                     }
                 }
             } catch (IOException e) {
@@ -60,6 +62,7 @@ public class AutoGenerator extends AbstractGenerator {
             }
         }
         logger.debug("==========================文件生成完成！！！==========================");
+        System.out.println("==========================文件生成完成！！！==========================");
     }
 
     /**
@@ -250,6 +253,7 @@ public class AutoGenerator extends AbstractGenerator {
         template.merge(context, writer);
         writer.close();
         logger.debug("模板:" + templatePath + ";  文件:" + outputFile);
+        System.out.println("模板:" + templatePath + ";  文件:" + outputFile);
     }
 
     /**
