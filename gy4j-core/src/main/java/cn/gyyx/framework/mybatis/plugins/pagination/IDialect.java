@@ -1,5 +1,13 @@
 package cn.gyyx.framework.mybatis.plugins.pagination;
 
+/**
+ * <p>
+ * 数据库 分页语句组装接口
+ * </p>
+ *
+ * @author hubin
+ * @Date 2016-01-23
+ */
 public interface IDialect {
 
     /**
