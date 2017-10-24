@@ -1,12 +1,20 @@
 package cn.gyyx.framework.mybatis.plugins.pagination;
 
-import cn.gyyx.framework.mybatis.enums.Optimize;
-import cn.gyyx.framework.mybatis.mapper.SqlHelper;
 import cn.gyyx.framework.mybatis.toolkit.StringUtils;
 import org.apache.ibatis.session.RowBounds;
 
 import java.io.Serializable;
 
+/**
+ * <p>
+ * 简单分页模型
+ * </p>
+ * 用户可以通过继承 org.apache.ibatis.session.RowBounds实现自己的分页模型<br>
+ * 注意：插件仅支持RowBounds及其子类作为分页参数
+ *
+ * @author hubin
+ * @Date 2016-01-23
+ */
 public class Pagination extends RowBounds implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -29,14 +37,14 @@ public class Pagination extends RowBounds implements Serializable {
     /**
      * 开启排序（默认 true） 只在代码逻辑判断 并不截取sql分析
      *
-     * @see SqlHelper fillWrapper
+     * @see cn.gyyx.framework.mybatis.mapper.SqlHelper fillWrapper
      **/
     private boolean openSort = true;
 
     /**
      * 查询总数优化（默认 false 该属性只针对于Optimize.DEFAULT有效)
      *
-     * @see Optimize
+     * @see cn.gyyx.framework.mybatis.enums.Optimize
      *
      */
     private boolean optimizeCount = false;

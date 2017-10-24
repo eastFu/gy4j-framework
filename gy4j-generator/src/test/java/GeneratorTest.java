@@ -8,11 +8,11 @@ import cn.gyyx.framework.generator.SimpleGenerator;
 public class GeneratorTest {
 
     public static void main(String[] args) {
-        String moduleName="test";
+        String moduleName="rbac";
         String userName="root";
         String pwd="root";
-        String url="jdbc:mysql://192.168.10.36:3306/db_gm?characterEncoding=utf8";
-        String author="xiaoming";
+        String url="jdbc:mysql://192.168.10.36:3306/db_rbac?characterEncoding=utf8";
+        String author="east.Fu";
         String outPath="E://TEST";
 
         SimpleGenerator generator=new SimpleGenerator();
