@@ -7,7 +7,9 @@
     <groupId>cn.gyyx.framework</groupId>
     <artifactId>gy4j-rbac</artifactId>
     <version>0.0.1</version>
+    <packaging>war</packaging>
 
+    
     <dependencies>
         <dependency>
             <groupId>cn.gyyx.framework</groupId>
