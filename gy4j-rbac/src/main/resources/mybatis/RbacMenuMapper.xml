@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.gyyx.rbac.mapper.RbacMenuMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="cn.gyyx.rbac.entity.RbacMenu">
+		<id column="menu_id" property="menuId" />
+		<result column="menu_name" property="menuName" />
+		<result column="menu_url" property="menuUrl" />
+		<result column="module_id_f" property="moduleIdF" />
+		<result column="menu_sort" property="menuSort" />
+		<result column="menu_icon" property="menuIcon" />
+		<result column="menu_status" property="menuStatus" />
+	</resultMap>
+
+</mapper>
