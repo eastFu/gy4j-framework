@@ -18,14 +18,11 @@ public class WebContextListener extends ContextLoaderListener {
     public WebApplicationContext initWebApplicationContext(ServletContext servletContext) {
         StringBuilder sb = new StringBuilder();
         sb.append("\r\n======================================================================\r\n");
-        sb.append("\r\n    欢迎使用 gy4j-framework v 0.0.1");
+        sb.append("\r\n          gyyx-framework v1.2.0");
         sb.append("\r\n======================================================================\r\n");
-        System.out.println(sb.toString());
-
+        LOG.info(sb.toString());
         //cache类型（redis,memcache,mogodb）
-
         //cache配置文件目录
-
         return super.initWebApplicationContext(servletContext);
     }
 

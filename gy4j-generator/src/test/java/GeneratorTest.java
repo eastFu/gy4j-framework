@@ -10,10 +10,10 @@ public class GeneratorTest {
     public static void main(String[] args) {
         String moduleName="rbac";
         String userName="root";
-        String pwd="root";
-        String url="jdbc:mysql://192.168.10.36:3306/db_rbac?characterEncoding=utf8";
+        String pwd="east";
+        String url="jdbc:mysql://localhost:3306/king-admin?characterEncoding=utf8";
         String author="east.Fu";
-        String outPath="E://TEST";
+        String outPath="E://king";
 
         SimpleGenerator generator=new SimpleGenerator();
         generator.initBasicConfig(moduleName,userName,pwd,url);
