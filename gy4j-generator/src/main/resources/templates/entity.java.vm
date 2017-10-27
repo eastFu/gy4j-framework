@@ -75,15 +75,5 @@ public class ${entity} implements Serializable {
 
 #end
 #end
-#if(${activeRecord})
-	@Override
-	protected Serializable pkVal() {
-#if(${keyPropertyName})
-		return this.${keyPropertyName};
-#else
-		return this.id;
-#end
-	}
 
-#end
 }
