@@ -2,7 +2,7 @@ package ${package.Mapper};
 
 import ${package.Entity}.${entity};
 import ${superMapperClassPackage};
-import cn.gyyx.framework.mybatis.annotations.MyBatisDao
+import cn.gyyx.framework.mybatis.annotations.MyBatisDao;
 /**
  * <p>
   * $!{table.comment} Mapper 接口
