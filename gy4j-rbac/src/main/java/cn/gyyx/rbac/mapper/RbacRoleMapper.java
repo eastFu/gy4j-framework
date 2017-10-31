@@ -2,7 +2,7 @@ package cn.gyyx.rbac.mapper;
 
 import cn.gyyx.rbac.entity.RbacRole;
 import cn.gyyx.framework.mybatis.mapper.BaseMapper;
-import cn.gyyx.framework.mybatis.annotations.MyBatisDao
+import cn.gyyx.framework.mybatis.annotations.MyBatisDao;
 /**
  * <p>
   * 系统角色表 Mapper 接口
