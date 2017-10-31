@@ -7,6 +7,7 @@
     <groupId>cn.gyyx.framework</groupId>
     <artifactId>gy4j-core</artifactId>
     <version>0.0.1</version>
+    <packaging>jar</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -133,17 +134,30 @@
             <version>${commons-codec.version}</version>
         </dependency>
 
-        <!-- LOG -->
+        <!-- LOG
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
+        -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>0.9.28</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>0.9.28</version>
+        </dependency>
+
 
         <dependency>
             <groupId>javax.persistence</groupId>

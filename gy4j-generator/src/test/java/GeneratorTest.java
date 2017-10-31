@@ -14,7 +14,6 @@ public class GeneratorTest {
         String url="jdbc:mysql://localhost:3306/king-admin?characterEncoding=utf8";
         String author="east.Fu";
         String outPath="E://king";
-
         SimpleGenerator generator=new SimpleGenerator();
         generator.initBasicConfig(moduleName,userName,pwd,url);
         generator.run(outPath,author);

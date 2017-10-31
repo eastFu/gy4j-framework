@@ -2,7 +2,7 @@ package cn.gyyx.rbac.mapper;
 
 import cn.gyyx.rbac.entity.RbacIconcls;
 import cn.gyyx.framework.mybatis.mapper.BaseMapper;
-import cn.gyyx.framework.mybatis.annotations.MyBatisDao
+import cn.gyyx.framework.mybatis.annotations.MyBatisDao;
 /**
  * <p>
   *  Mapper 接口

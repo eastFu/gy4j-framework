@@ -88,6 +88,7 @@ public class SimpleGenerator extends AutoGenerator{
         gc.setBaseColumnList(false);// XML columList
         gc.setAuthor(author);
         setGlobalConfig(gc);
+        //BasicConfigurator.configure();
         initStrategyCofig();
         execute();
     }
