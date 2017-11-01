@@ -8,7 +8,6 @@ package cn.gyyx.framework.cache.memcache;
 public class MemcacheHelper {
 
     public boolean save(Object obj){
-
         return true;
     }
 
