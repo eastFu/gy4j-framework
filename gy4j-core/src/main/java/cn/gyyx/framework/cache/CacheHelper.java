@@ -6,21 +6,13 @@ package cn.gyyx.framework.cache;
  * @Description :
  * @Date : Created in  2017/10/6 21:34
  */
-public class CacheHelper {
+public interface  CacheHelper {
 
-    public Object findByKey(Object key){
-        return  null;
-    }
+    public Object findByKey(Object key);
 
-    public boolean save(Object obj){
-        return true;
-    }
+    public boolean save(Object obj);
 
-    public boolean remove(Object key){
-        return true;
-    }
+    public boolean remove(Object key);
 
-    public boolean clear(){
-        return true;
-    }
+    public boolean clear();
 }
