@@ -51,6 +51,10 @@ public class ElvesUtil {
     public static final String ELVES_API_JOB_CRON_DETAIL_URI = "/api/v2/cron/detail";
 
 
+    /* default num */
+    public static final int DEFAULT_TIMEOUT_SECONDS = 90;
+
+
     static{
         InputStream is =null;
         try {
@@ -62,7 +66,7 @@ public class ElvesUtil {
             ELVES_API_HOST=properties.getProperty("elves.api.host");
             ELVES_APP_INSTRUCT=properties.getProperty("elves.app");
         }catch (IOException e){
-            LOG.error("load conf.properties error,msg : "+ExceptionUtil.getStackTraceAsString(e));
+            LOG.error("init elves config fail,msg : "+ExceptionUtil.getStackTraceAsString(e));
         }finally {
             if(null!=is){
                 try {
@@ -94,9 +98,9 @@ public class ElvesUtil {
         }
         //可选参数
         if(null==params.get("timeout")||StringUtils.isBlank(params.get("timeout").toString())){
-            params.put("timeout","60");
+            params.put("timeout",ElvesUtil.DEFAULT_TIMEOUT_SECONDS);
         }
-        LOG.debug("params :"+ JSON.toJSONString(params));
+        LOG.info("params to json : "+ JSON.toJSONString(params));
         //制作签名
         StringBuffer sortUri=new StringBuffer(apiUri);
         if(params.size()>0){
@@ -117,8 +121,8 @@ public class ElvesUtil {
         sortUri.append(ElvesUtil.ELVES_AUTH_KEY);
         //MD5
         String sign=Md5Util.MD5(sortUri.toString());
-        LOG.debug("sign uri : "+sortUri);
-        LOG.debug("sign : "+sign);
+        LOG.info("sign uri : "+sortUri);
+        LOG.info("sign : "+sign);
         params.put("sign_type","MD5");
         params.put("sign",sign);
         //封装参数，post 发送
@@ -130,5 +134,4 @@ public class ElvesUtil {
         }
         return null;
     }
-
 }
