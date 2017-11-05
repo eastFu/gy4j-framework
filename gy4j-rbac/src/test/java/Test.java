@@ -6,6 +6,8 @@
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * test
@@ -17,7 +19,7 @@ public class Test {
     private static final Logger LOGGER = LoggerFactory.getLogger(Test.class);
 
     public static void main(String[] args) {
-//        ApplicationContext spring = new ClassPathXmlApplicationContext(new String[] {"spring.xml","srping-mvc.xml"});
-        LOGGER.info("sdfsdf");
+        ApplicationContext spring = new ClassPathXmlApplicationContext(new String[] {"spring.xml","srping-mvc.xml"});
+//        LOGGER.info("sdfsdf");
     }
 }

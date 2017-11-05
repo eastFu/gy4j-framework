@@ -143,7 +143,7 @@ public class TableInfo {
                     }
                     // 自增
                     if (field.isKeyIdentityFlag()) {
-                        pkgSet.add("cn.gyyx.framework.mybatis.annotations.IdType");
+                        pkgSet.add("cn.gyyx.framework.mybatis.enums.IdType");
                     }
                 } else if (field.isConvert()) {
                     // 普通字段

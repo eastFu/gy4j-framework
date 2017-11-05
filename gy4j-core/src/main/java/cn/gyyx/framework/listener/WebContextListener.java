@@ -18,7 +18,7 @@ public class WebContextListener extends ContextLoaderListener {
     public WebApplicationContext initWebApplicationContext(ServletContext servletContext) {
         StringBuilder sb = new StringBuilder();
         sb.append("\r\n======================================================================\r\n");
-        sb.append("\r\n          gyyx-framework v1.2.0");
+        sb.append("\r\n    欢迎使用 ：gyyx-framework v2.0.0");
         sb.append("\r\n======================================================================\r\n");
         LOG.info(sb.toString());
         //cache类型（redis,memcache,mogodb）

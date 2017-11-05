@@ -8,12 +8,12 @@ import cn.gyyx.framework.generator.SimpleGenerator;
 public class GeneratorTest {
 
     public static void main(String[] args) {
-        String moduleName="rbac";
+        String moduleName="appstore";
         String userName="root";
-        String pwd="east";
-        String url="jdbc:mysql://localhost:3306/king-admin?characterEncoding=utf8";
+        String pwd="root";
+        String url="jdbc:mysql://192.168.10.36:3306/app_store?characterEncoding=utf8";
         String author="east.Fu";
-        String outPath="E://king";
+        String outPath="E://app-store";
         SimpleGenerator generator=new SimpleGenerator();
         generator.initBasicConfig(moduleName,userName,pwd,url);
         generator.run(outPath,author);
