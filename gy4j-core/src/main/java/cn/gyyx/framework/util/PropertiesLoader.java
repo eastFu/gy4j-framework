@@ -1,16 +1,16 @@
 
 package cn.gyyx.framework.util;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.NoSuchElementException;
-import java.util.Properties;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.NoSuchElementException;
+import java.util.Properties;
 
 
 public class PropertiesLoader {
@@ -126,9 +126,6 @@ public class PropertiesLoader {
 		Properties props = new Properties();
 
 		for (String location : resourcesPaths) {
-
-//			logger.debug("Loading properties file from:" + location);
-
 			InputStream is = null;
 			try {
 				Resource resource = resourceLoader.getResource(location);

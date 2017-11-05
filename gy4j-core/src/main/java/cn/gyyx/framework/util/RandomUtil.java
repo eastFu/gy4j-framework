@@ -11,7 +11,6 @@ import java.util.List;
 public class RandomUtil {
     public static void main(String[] args) {
         String s = createRandomNum(6,1);
-        System.out.println(s);
     }
 
     /**
