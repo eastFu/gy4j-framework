@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * springmvc自定义异常处理类
@@ -17,7 +18,9 @@ public class CustomMappingExceptionResolver {
     private static final Logger LOG = LoggerFactory.getLogger(CustomMappingExceptionResolver.class);
 
     @ExceptionHandler
-    public void exp(Exception ex) {
+    @ResponseBody
+    public void exp(Exception ex) throws Exception{
         LOG.error(ExceptionUtil.getStackTraceAsString(ex));
+        throw ex;
     }
 }
