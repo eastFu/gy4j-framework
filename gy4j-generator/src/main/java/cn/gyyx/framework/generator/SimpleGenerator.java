@@ -17,6 +17,32 @@ import java.util.List;
  */
 public class SimpleGenerator extends AutoGenerator{
 
+    /**
+     *
+     * @param moduleName  项目名
+     * @param userName    数据库用户名
+     * @param pwd         数据库密码
+     * @param url         数据库URL
+     * @param outPath     输出目录
+     * @param author      作者
+     */
+    public SimpleGenerator(String moduleName,String userName,String pwd,String url,String outPath,String author){
+        initPackageConfig(moduleName);
+        initDataSourceConfig(userName,pwd,url);
+        initMapperXml();
+
+        GlobalConfig gc = new GlobalConfig();
+        gc.setOutputDir(outPath);
+        gc.setFileOverride(true);
+        gc.setActiveRecord(true);
+        gc.setEnableCache(false);// XML 二级缓存
+        gc.setBaseResultMap(true);// XML ResultMap
+        gc.setBaseColumnList(false);// XML columList
+        gc.setAuthor(author);
+        setGlobalConfig(gc);
+
+    }
+
     // 数据源配置
     private void initDataSourceConfig(String userName,String pwd,String url){
         DataSourceConfig dsc = new DataSourceConfig();
@@ -63,12 +89,6 @@ public class SimpleGenerator extends AutoGenerator{
         setCfg(cfg);
     }
 
-    public void initBasicConfig(String moduleName,String userName,String pwd,String url){
-        initPackageConfig(moduleName);
-        initDataSourceConfig(userName,pwd,url);
-        initMapperXml();
-    }
-
     private void initStrategyCofig(){
         // 策略配置
         StrategyConfig strategy = new StrategyConfig();
@@ -78,16 +98,7 @@ public class SimpleGenerator extends AutoGenerator{
         setStrategy(strategy);
     }
 
-    public void run(String outPath,String author){
-        GlobalConfig gc = new GlobalConfig();
-        gc.setOutputDir(outPath);
-        gc.setFileOverride(true);
-        gc.setActiveRecord(true);
-        gc.setEnableCache(false);// XML 二级缓存
-        gc.setBaseResultMap(true);// XML ResultMap
-        gc.setBaseColumnList(false);// XML columList
-        gc.setAuthor(author);
-        setGlobalConfig(gc);
+    public void run(){
         //BasicConfigurator.configure();
         initStrategyCofig();
         execute();
